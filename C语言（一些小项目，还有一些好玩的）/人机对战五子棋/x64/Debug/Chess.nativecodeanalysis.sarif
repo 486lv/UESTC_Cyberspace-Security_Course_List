@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32822.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/lenovo/desktop/c语言/人机对战五子棋/chess.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "7070b498b7af0cf72d06172cb0a3b7b31c636dbcc0f6818832afebdaf9ee9991"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/lenovo/desktop/c语言/人机对战五子棋/chess.h"
+          },
+          "hashes": {
+            "sha-256": "a2083293a32bf0bbc4f4d2fae0e2e27fc1505b93a0763ac9ace0654947cf3451"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/microsoft visual studio/2022/professional/vc/auxiliary/vs/include/graphics.h"
+          },
+          "hashes": {
+            "sha-256": "057ee75a89db99556d63a972b5611a42913b3fc6678f305b01f305b076bf220c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/microsoft visual studio/2022/professional/vc/auxiliary/vs/include/easyx.h"
+          },
+          "hashes": {
+            "sha-256": "bb41113e55530a7bc296c223e3cb1c48b0d35c053b4c66ed843e4f75463cf0d8"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World DApp</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <style>
+        .btn-primary {
+        
+        background: linear-gradient(to bottom, #e65d4d, #f19737);
+        color: #FFF !important; 
+    
+        border-radius: 15px !important; 
+  
+        padding: 9px 36px !important; 
+    
+        font-size: 26px !important; 
+        }
+        #candidate { /* 设置输入框的ID为candidate */
+            font-size: 26px; /* 设置字体大小为26px */
+            font-family: 'Comic Sans MS', cursive; /* 设置字体为Comic Sans MS */
+            border-radius: 20px; /* 设置边框圆角为20px */      
+            padding: 1px 30px; /* 设置内边距为16px上下，29px左右 */   
+            background: linear-gradient(to bottom, #d7efea, #e89f9f); /* 设置背景颜色为从蓝色渐变到红色 */
+            position: relative; /* 设置定位方式为相对定位 */
+            top: 8px; /* 设置顶部位置为-100px，即紧挨在投票按钮上方 */   
+            left:28px;
+        }
+        body {   
+        background: #f6f36a; /* 设置背景颜色为黑色 */
+        background: linear-gradient(to bottom, #f38574, #4e97f0); /* 设置背景颜色为从黑色渐变到红色 */   
+        background-repeat: no-repeat; /* 设置背景图片不重复 */  
+        background-attachment: fixed; /* 设置背景图片固定 */   
+        background-size: cover; /* 设置背景图片覆盖整个容器 */   
+        background-position: center; /* 设置背景图片居中显示 */
+        font-family: 'Comic Sans MS', cursive; /* 设置字体为Comic Sans MS */
+        font-size: 26px; /* 设置字体大小为26px */
+        text-align: center; /* 设置文字居中对齐 */   
+        color: #FFFFFF; /* 设置文字颜色为白色 */
+        text-shadow: 0 0 10px rgba(12, 199, 237, 0.1); /* 设置文字阴影效果 */   
+        position: relative; /* 设置定位方式为相对定位 */
+        width: 100%; /* 设置宽度为100% */
+        height: 100%; /* 设置高度为100% */
+        margin: 0 auto; /* 设置左右外边距为auto，使其水平居中 */   
+        max-width: 1500px; /* 设置最大宽度为1500px */
+        max-height: 600px; /* 设置最大高度为600px */   
+        overflow: auto; /* 设置内容溢出时显示滚动条 */
+        box-sizing: border-box; /* 设置box-sizing为border-box，使其包含边框 */   
+        display: block; /* 设置显示方式为块级元素 */
+        clear: both; /* 清除浮动 */   
+        float: none; /* 设置浮动方式为无浮动 */
+        z-index: 1; /* 设置z-index为1 */   
+        /* vertical-align: middle; 设置垂直对齐方式为居中对齐 */
+        text-align: center; /* 设置水平对齐方式为居中对齐 */   
+        white-space: nowrap; /* 设置文本不换行 */
+        table-layout: fixed; /* 设置表格布局方式为固定布局 */   
+        border-collapse: collapse; /* 设置边框合并为合并边框 */   
+        border-spacing: 0; /* 设置边框间距为0 */
+    }
+        .center-text{
+            text-align: center;
+        }
+        /* body{
+            background-image:url('./OIP-C.png');
+            background-repeat:no-repeat;
+            background-size:cover;
+        } */
+
+        table{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto
+        }
+        th, td{
+            text-align: center;
+        }
+        #reset{
+            /* position: relative; */
+            top: 100px;
+            left: 28px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1 class="center-text">简易投票应用</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>头像</th>
+                    <th>候选人</th>
+                    <th>选票数</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://img.zcool.cn/community/01d5e958158d44a84a0d304f1c3e87.png@2o.png" width="50" height="50" /></td>
+                    <td>Alice</td>
+                    <td id="candidate1"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://img.zcool.cn/community/0131e458158d48a84a0e282bfaa2fa.png@2o.png" width="50" height="50" /></td>
+                    <td>Bob</td>
+                    <td id="candidate2"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://img.zcool.cn/community/01ee3758158d4ba84a0d304fbe062e.png@1280w_1l_2o_100sh.png" width="50" height="50" /></td>
+                    <td>Cary</td>
+                    <td id="candidate3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <input type="text" id="candidate" /> -->
+    <!-- <a href="#" onclick="voteForCandidate()" class="btn btn-primary" ><img src="./UGImiemATW.png" width="60" height="30" /></a> -->
+    <table>
+        <tr>
+            <th>投票人</th>
+            <th>投票</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td><input type="text" id="candidate" /></td>
+            <td><a href="#" onclick="voteForCandidate()" class="btn btn-primary" ><img src="./UGImiemATW.png" width="60" height="30" /></a></td>
+        </tr>
+    </table>
+    <a href="#" onclick="reset()" class="btn btn-primary" id="reset">重置</a>
+    <table>
+        <tr>
+            <th>winner</th>
+            <th>票数</th>
+            <th><a href='#' onclick="winner()" class="btn btn-primary">result</a></th>
+        </tr>
+        <tr>
+            <td id="winner"></td>
+            <td id="totalVotes"></td>
+    </table>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@0.20.1/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+
+</html>

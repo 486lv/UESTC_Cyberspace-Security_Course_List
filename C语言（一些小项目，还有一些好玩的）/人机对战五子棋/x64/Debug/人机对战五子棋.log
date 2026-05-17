@@ -1,0 +1,6 @@
+﻿  AI.cpp
+  ChessGame.cpp
+  源.cpp
+C:\Users\Lenovo\Desktop\C语言\人机对战五子棋\源.cpp(8,26): warning C4305: “参数”: 从“double”到“float”截断
+  正在生成代码...
+  人机对战五子棋.vcxproj -> C:\Users\Lenovo\Desktop\C语言\人机对战五子棋\x64\Debug\人机对战五子棋.exe

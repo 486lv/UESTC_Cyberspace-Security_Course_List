@@ -1,0 +1,7 @@
+﻿  Linklist.c
+C:\Users\Lenovo\Desktop\桌面\C语言\链表\Linklist.c(139,11): warning C4098: “Clear_LinkList”:“void”函数返回值
+  源.c
+C:\Users\Lenovo\Desktop\桌面\C语言\链表\源.c(5,9): warning C4013: “printf”未定义；假设外部返回 int
+  正在生成代码...
+源.obj : error LNK2005: main 已经在 Linklist.obj 中定义
+C:\Users\Lenovo\Desktop\桌面\C语言\链表\x64\Debug\Project1.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

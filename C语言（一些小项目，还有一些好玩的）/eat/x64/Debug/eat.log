@@ -1,0 +1,4 @@
+﻿  源.cpp
+C:\Users\Lenovo\Desktop\C语言\eat\源.cpp(33,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+C:\Users\Lenovo\Desktop\C语言\eat\源.cpp(62,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  eat.vcxproj -> C:\Users\Lenovo\Desktop\C语言\eat\x64\Debug\eat.exe

@@ -1,0 +1,69 @@
+﻿  木鱼.cpp
+E:\桌面\C语言\木鱼\木鱼.cpp(28,5): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+E:\桌面\C语言\木鱼\木鱼.cpp(28,5): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [11]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(28,20): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+E:\桌面\C语言\木鱼\木鱼.cpp(28,5): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [11]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(28,20): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(28,5): message : 尝试匹配参数列表“(IMAGE *, const char [11], int, int)”时
+E:\桌面\C语言\木鱼\木鱼.cpp(65,13): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(65,13): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [7]”转换为“TCHAR”
+E:\桌面\C语言\木鱼\木鱼.cpp(65,33): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(65,13): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [7]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(65,33): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(65,13): message : 尝试匹配参数列表“(short, short, const char [7])”时
+E:\桌面\C语言\木鱼\木鱼.cpp(76,13): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(76,13): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [7]”转换为“TCHAR”
+E:\桌面\C语言\木鱼\木鱼.cpp(76,33): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(76,13): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [7]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(76,33): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(76,13): message : 尝试匹配参数列表“(short, short, const char [7])”时
+E:\桌面\C语言\木鱼\木鱼.cpp(86,13): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(86,13): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [7]”转换为“TCHAR”
+E:\桌面\C语言\木鱼\木鱼.cpp(86,33): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(86,13): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [7]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(86,33): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(86,13): message : 尝试匹配参数列表“(short, short, const char [7])”时
+E:\桌面\C语言\木鱼\木鱼.cpp(185,17): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(185,17): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [7]”转换为“TCHAR”
+E:\桌面\C语言\木鱼\木鱼.cpp(185,33): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(185,17): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [7]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(185,33): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(185,17): message : 尝试匹配参数列表“(int, int, const char [7])”时
+E:\桌面\C语言\木鱼\木鱼.cpp(193,17): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(193,17): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [7]”转换为“TCHAR”
+E:\桌面\C语言\木鱼\木鱼.cpp(193,33): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(193,17): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [7]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(193,33): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(193,17): message : 尝试匹配参数列表“(int, int, const char [7])”时
+E:\桌面\C语言\木鱼\木鱼.cpp(201,17): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(201,17): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [7]”转换为“TCHAR”
+E:\桌面\C语言\木鱼\木鱼.cpp(201,33): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+E:\桌面\C语言\木鱼\木鱼.cpp(201,17): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [7]”转换为“LPCTSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(201,33): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+E:\桌面\C语言\木鱼\木鱼.cpp(201,17): message : 尝试匹配参数列表“(int, int, const char [7])”时
+E:\桌面\C语言\木鱼\木鱼.cpp(244,5): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [28]”转换为“LPCWSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(244,19): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+E:\桌面\C语言\木鱼\木鱼.cpp(244,5): message : 尝试匹配参数列表“(const char [28], int, int, int)”时
+E:\桌面\C语言\木鱼\木鱼.cpp(245,5): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [9]”转换为“LPCWSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(245,19): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+E:\桌面\C语言\木鱼\木鱼.cpp(245,5): message : 尝试匹配参数列表“(const char [9], int, int, int)”时
+E:\桌面\C语言\木鱼\木鱼.cpp(246,5): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [18]”转换为“LPCWSTR”
+E:\桌面\C语言\木鱼\木鱼.cpp(246,19): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+E:\桌面\C语言\木鱼\木鱼.cpp(246,5): message : 尝试匹配参数列表“(const char [18], int, int, int)”时

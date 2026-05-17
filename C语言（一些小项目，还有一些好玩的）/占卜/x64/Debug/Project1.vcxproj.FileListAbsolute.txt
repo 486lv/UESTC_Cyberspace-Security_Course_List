@@ -1,0 +1,3 @@
+C:\Users\Lenovo\Desktop\占卜\x64\Debug\Project1.exe
+C:\Users\Lenovo\Desktop\C语言\占卜\x64\Debug\Project1.exe
+E:\桌面\C语言\占卜\x64\Debug\Project1.exe
