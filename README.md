@@ -1,2 +1,3 @@
 # UESTC_Cyberspace-Security_Course_List
 电子科技大学网络空间安全本科资料合集
+不只网安，还有计算机类其他专业课
