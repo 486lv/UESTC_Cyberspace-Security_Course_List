@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\2024-2025-2\Computer_System_Design_and_Implementation\Labs\Lab_09_PipelineItnterrupt_2025\pipelined_int_cpu_2025\pipelinedcpu_exc_int_anvyl.ncd
+OUTFILE=D:\2024-2025-2\Computer_System_Design_and_Implementation\Labs\Lab_09_PipelineItnterrupt_2025\pipelined_int_cpu_2025\pipelinedcpu_exc_int_anvyl.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=D:\2024-2025-2\Computer_System_Design_and_Implementation\Labs\Lab_09_PipelineItnterrupt_2025\pipelined_int_cpu_2025
+LICENSE=WebPack
+USER_INFO=__0_0_0

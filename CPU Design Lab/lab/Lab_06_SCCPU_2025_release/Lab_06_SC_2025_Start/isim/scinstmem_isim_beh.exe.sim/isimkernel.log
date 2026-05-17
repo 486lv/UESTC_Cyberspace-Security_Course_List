@@ -1,0 +1,28 @@
+Command line:
+   scinstmem_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62833
+
+Mon Jul 07 13:46:03 2025
+
+
+ Elaboration Time: 0.187201 sec
+
+ Current Memory Usage: 1163.15 Meg
+
+ Total Signals          : 16
+ Total Nets             : 1101
+ Total Signal Drivers   : 9
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 1181
+
+ Total Simulation Time: 0.202801 sec
+
+ Current Memory Usage: 1163.15 Meg
+
+Mon Jul 07 13:46:09 2025
+

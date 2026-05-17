@@ -1,0 +1,4 @@
+verilog work "shift.v"
+verilog work "mux4x32.v"
+verilog work "addsub32.v"
+verilog work "alu.v"

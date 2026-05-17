@@ -1,0 +1,917 @@
+
+program.elf:     file format elf32-tradlittlemips
+
+SYMBOL TABLE:
+9fc00000 l    d  .bootrom	00000000 .bootrom
+80000000 l    d  .exception_vector	00000000 .exception_vector
+80000200 l    d  .text	00000000 .text
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .mdebug.abi32	00000000 .mdebug.abi32
+00000000 l    d  .pdr	00000000 .pdr
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    df *ABS*	00000000 boot.o
+9fc00004 l       .bootrom	00000000 init_cp0
+9fc00038 l       .bootrom	00000000 all_done
+00000000 l    df *ABS*	00000000 exceptions.o
+80000000 l       .exception_vector	00000000 __tlb_refill_loop
+80000080 l       .exception_vector	00000000 __xtlb_refill_loop
+80000100 l       .exception_vector	00000000 __cache_error_loop
+80000180 l       .exception_vector	00000000 __general_exception_loop
+00000000 l    df *ABS*	00000000 main.c
+80000200  w    F .text	00000000 __exception_handle_verbose
+80000394 g       .text	00000000 _etext
+800083b0 g       *ABS*	00000000 _gp
+00000020 g       *ABS*	00000000 __isr_vec_space
+00000000 g       *ABS*	00000000 __DYNAMIC
+00000001 g       *ABS*	00000000 __use_excpt_boot
+00000000  w      *UND*	00000000 _mips_xtlb_refill
+80000200  w    F .text	00000000 __register_excpt_boot
+80000200  w    F .text	00000000 __register_excpt_handler
+80000000 g       *ABS*	00000000 __app_start
+80000000 g       *ABS*	00000000 __flash_app_start
+80000200 g       .text	00000000 _ftext
+9fc00040 g     F .bootrom	0000006c _start
+80000000 g       *ABS*	00000000 __excpt_ebase
+80000250 g     F .text	00000144 main
+80000200 g     F .text	00000000 __exception_handle
+bfc00000 g       *ABS*	00000000 __entry
+80000200  w    F .text	00000004 __getargs
+80000204 g     F .text	0000004c delay
+00000000  w      *UND*	00000000 _mips_general_exception
+00000000  w      *UND*	00000000 _mips_tlb_refill
+00000000  w      *UND*	00000000 _mips_cache_error
+80040000 g       *ABS*	00000000 __stack
+80000000 g     F .exception_vector	00000198 __exception_entry
+80000000 g       .exception_vector	00000000 __base
+bfc00000 g       *ABS*	00000000 __flash_start
+9fc00000 g     F .bootrom	00000040 __reset_vector
+0001f800 g       *ABS*	00000000 __memory_size
+800083b0 g       *ABS*	00000000 __global
+80000200  w    F .text	00000000 __isr_vec
+00000000 g       *ABS*	00000000 __isr_vec_count
+
+
+
+Disassembly of section .bootrom:
+
+9fc00000 <__reset_vector>:
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:20
+9fc00000:	40804800 	mtc0	zero,c0_count
+
+9fc00004 <init_cp0>:
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:27
+9fc00004:	3c030040 	lui	v1,0x40
+9fc00008:	34630004 	ori	v1,v1,0x4
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:28
+9fc0000c:	40836000 	mtc0	v1,c0_status
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:31
+9fc00010:	40806800 	mtc0	zero,c0_cause
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:34
+9fc00014:	40805800 	mtc0	zero,c0_compare
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:38
+9fc00018:	3c1f9fc0 	lui	ra,0x9fc0
+9fc0001c:	27ff0038 	addiu	ra,ra,56
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:39
+9fc00020:	00002025 	move	a0,zero
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:41
+9fc00024:	3c029fc0 	lui	v0,0x9fc0
+9fc00028:	24420040 	addiu	v0,v0,64
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:42
+9fc0002c:	4082f000 	mtc0	v0,c0_errorepc
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:43
+9fc00030:	000000c0 	ehb
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:47
+9fc00034:	42000018 	eret
+
+9fc00038 <all_done>:
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:53
+9fc00038:	1000ffff 	b	9fc00038 <all_done>
+C:\Users\Lenovo\Desktop\mymips_c_template/boot.S:54
+9fc0003c:	00000000 	nop
+
+9fc00040 <_start>:
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:16
+9fc00040:	03e08025 	move	s0,ra
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:18
+9fc00044:	3c1c8001 	lui	gp,0x8001
+9fc00048:	279c83b0 	addiu	gp,gp,-31824
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:20
+9fc0004c:	3c1d8004 	lui	sp,0x8004
+9fc00050:	27bd0000 	addiu	sp,sp,0
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:22
+9fc00054:	3c028000 	lui	v0,0x8000
+9fc00058:	244203b0 	addiu	v0,v0,944
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:23
+9fc0005c:	3c038000 	lui	v1,0x8000
+9fc00060:	246303b0 	addiu	v1,v1,944
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:24
+9fc00064:	10430004 	beq	v0,v1,9fc00078 <_start+0x38>
+9fc00068:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:26
+9fc0006c:	24420004 	addiu	v0,v0,4
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:28
+9fc00070:	1443fffe 	bne	v0,v1,9fc0006c <_start+0x2c>
+9fc00074:	ac40fffc 	sw	zero,-4(v0)
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:31
+9fc00078:	24040000 	li	a0,0
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:33
+9fc0007c:	27bdfff0 	addiu	sp,sp,-16
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:37
+9fc00080:	40026000 	mfc0	v0,c0_status
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:38
+9fc00084:	7c02b584 	ins	v0,zero,0x16,0x1
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:39
+9fc00088:	40826000 	mtc0	v0,c0_status
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:40
+9fc0008c:	000000c0 	ehb
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:43
+9fc00090:	3c088000 	lui	t0,0x8000
+9fc00094:	25080250 	addiu	t0,t0,592
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:44
+9fc00098:	0100f809 	jalr	t0
+9fc0009c:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:47
+9fc000a0:	0200f825 	move	ra,s0
+C:\Users\Lenovo\Desktop\mymips_c_template/crt0.S:48
+9fc000a4:	03e00008 	jr	ra
+9fc000a8:	00000000 	nop
+_start():
+9fc000ac:	00000000 	nop
+
+Disassembly of section .exception_vector:
+
+80000000 <__exception_entry>:
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:45
+80000000:	3c1b0000 	lui	k1,0x0
+80000004:	277b0000 	addiu	k1,k1,0
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:46
+80000008:	1360fffd 	beqz	k1,80000000 <__exception_entry>
+8000000c:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:47
+80000010:	03600008 	jr	k1
+80000014:	00000000 	nop
+	...
+
+80000080 <__xtlb_refill_loop>:
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:52
+80000080:	3c1b0000 	lui	k1,0x0
+80000084:	277b0000 	addiu	k1,k1,0
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:53
+80000088:	1360fffd 	beqz	k1,80000080 <__xtlb_refill_loop>
+8000008c:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:54
+80000090:	03600008 	jr	k1
+80000094:	00000000 	nop
+	...
+
+80000100 <__cache_error_loop>:
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:59
+80000100:	3c1b0000 	lui	k1,0x0
+80000104:	277b0000 	addiu	k1,k1,0
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:60
+80000108:	1360fffd 	beqz	k1,80000100 <__cache_error_loop>
+8000010c:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:61
+80000110:	03600008 	jr	k1
+80000114:	00000000 	nop
+	...
+
+80000180 <__general_exception_loop>:
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:66
+80000180:	3c1b0000 	lui	k1,0x0
+80000184:	277b0000 	addiu	k1,k1,0
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:67
+80000188:	1360fffd 	beqz	k1,80000180 <__general_exception_loop>
+8000018c:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/exceptions.S:68
+80000190:	03600008 	jr	k1
+80000194:	00000000 	nop
+	...
+
+Disassembly of section .text:
+
+80000200 <__exception_handle>:
+C:\Users\Lenovo\Desktop\mymips_c_template/dummy.S:59
+80000200:	00000000 	nop
+
+80000204 <delay>:
+delay():
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:33
+80000204:	27bdfff8 	addiu	sp,sp,-8
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:35
+80000208:	afa00000 	sw	zero,0(sp)
+8000020c:	8fa30000 	lw	v1,0(sp)
+80000210:	3c02000f 	lui	v0,0xf
+80000214:	24424240 	addiu	v0,v0,16960
+80000218:	0062102b 	sltu	v0,v1,v0
+8000021c:	1040000a 	beqz	v0,80000248 <delay+0x44>
+80000220:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:35 (discriminator 3)
+80000224:	3c03000f 	lui	v1,0xf
+80000228:	24634240 	addiu	v1,v1,16960
+8000022c:	8fa20000 	lw	v0,0(sp)
+80000230:	24420001 	addiu	v0,v0,1
+80000234:	afa20000 	sw	v0,0(sp)
+80000238:	8fa20000 	lw	v0,0(sp)
+8000023c:	0043102b 	sltu	v0,v0,v1
+80000240:	1440fffa 	bnez	v0,8000022c <delay+0x28>
+80000244:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:36
+80000248:	03e00008 	jr	ra
+8000024c:	27bd0008 	addiu	sp,sp,8
+
+80000250 <main>:
+main():
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:6
+80000250:	27bdfbd8 	addiu	sp,sp,-1064
+80000254:	afbf0424 	sw	ra,1060(sp)
+80000258:	afb10420 	sw	s1,1056(sp)
+8000025c:	afb0041c 	sw	s0,1052(sp)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:9
+80000260:	afa00014 	sw	zero,20(sp)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:10
+80000264:	24020001 	li	v0,1
+80000268:	afa20018 	sw	v0,24(sp)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:14
+8000026c:	3c10bf80 	lui	s0,0xbf80
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:16
+80000270:	24110002 	li	s1,2
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:14
+80000274:	8e020004 	lw	v0,4(s0)
+80000278:	304200ff 	andi	v0,v0,0xff
+8000027c:	a3a20010 	sb	v0,16(sp)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:15
+80000280:	93a20010 	lbu	v0,16(sp)
+80000284:	304200ff 	andi	v0,v0,0xff
+80000288:	ae020010 	sw	v0,16(s0)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:16
+8000028c:	afb10414 	sw	s1,1044(sp)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:17
+80000290:	93a20010 	lbu	v0,16(sp)
+80000294:	304200ff 	andi	v0,v0,0xff
+80000298:	2c420002 	sltiu	v0,v0,2
+8000029c:	14400022 	bnez	v0,80000328 <main+0xd8>
+800002a0:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:18
+800002a4:	afb10414 	sw	s1,1044(sp)
+800002a8:	93a20010 	lbu	v0,16(sp)
+800002ac:	304200ff 	andi	v0,v0,0xff
+800002b0:	8fa30414 	lw	v1,1044(sp)
+800002b4:	0043102a 	slt	v0,v0,v1
+800002b8:	1440001b 	bnez	v0,80000328 <main+0xd8>
+800002bc:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:19 (discriminator 3)
+800002c0:	8fa30414 	lw	v1,1044(sp)
+800002c4:	8fa20414 	lw	v0,1044(sp)
+800002c8:	2442ffff 	addiu	v0,v0,-1
+800002cc:	00021080 	sll	v0,v0,0x2
+800002d0:	27a40010 	addiu	a0,sp,16
+800002d4:	00821021 	addu	v0,a0,v0
+800002d8:	8c440004 	lw	a0,4(v0)
+800002dc:	8fa20414 	lw	v0,1044(sp)
+800002e0:	2442fffe 	addiu	v0,v0,-2
+800002e4:	00021080 	sll	v0,v0,0x2
+800002e8:	27a50010 	addiu	a1,sp,16
+800002ec:	00a21021 	addu	v0,a1,v0
+800002f0:	8c420004 	lw	v0,4(v0)
+800002f4:	00442021 	addu	a0,v0,a0
+800002f8:	00031080 	sll	v0,v1,0x2
+800002fc:	00a21021 	addu	v0,a1,v0
+80000300:	ac440004 	sw	a0,4(v0)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:18 (discriminator 3)
+80000304:	8fa20414 	lw	v0,1044(sp)
+80000308:	24420001 	addiu	v0,v0,1
+8000030c:	afa20414 	sw	v0,1044(sp)
+80000310:	93a20010 	lbu	v0,16(sp)
+80000314:	304200ff 	andi	v0,v0,0xff
+80000318:	8fa30414 	lw	v1,1044(sp)
+8000031c:	0043102a 	slt	v0,v0,v1
+80000320:	1040ffe7 	beqz	v0,800002c0 <main+0x70>
+80000324:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:22
+80000328:	afa00414 	sw	zero,1044(sp)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:24
+8000032c:	afa00414 	sw	zero,1044(sp)
+80000330:	93a20010 	lbu	v0,16(sp)
+80000334:	304200ff 	andi	v0,v0,0xff
+80000338:	8fa30414 	lw	v1,1044(sp)
+8000033c:	0043102a 	slt	v0,v0,v1
+80000340:	1440ffcc 	bnez	v0,80000274 <main+0x24>
+80000344:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:25 (discriminator 3)
+80000348:	8fa20414 	lw	v0,1044(sp)
+8000034c:	00021080 	sll	v0,v0,0x2
+80000350:	27a30010 	addiu	v1,sp,16
+80000354:	00621021 	addu	v0,v1,v0
+80000358:	8c420004 	lw	v0,4(v0)
+8000035c:	ae020000 	sw	v0,0(s0)
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:26 (discriminator 3)
+80000360:	0c000081 	jal	80000204 <delay>
+80000364:	00000000 	nop
+C:\Users\Lenovo\Desktop\mymips_c_template/main.c:24 (discriminator 3)
+80000368:	8fa20414 	lw	v0,1044(sp)
+8000036c:	24420001 	addiu	v0,v0,1
+80000370:	afa20414 	sw	v0,1044(sp)
+80000374:	93a20010 	lbu	v0,16(sp)
+80000378:	304200ff 	andi	v0,v0,0xff
+8000037c:	8fa30414 	lw	v1,1044(sp)
+80000380:	0043102a 	slt	v0,v0,v1
+80000384:	1040fff0 	beqz	v0,80000348 <main+0xf8>
+80000388:	00000000 	nop
+8000038c:	1000ffb9 	b	80000274 <main+0x24>
+80000390:	00000000 	nop
+
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	0x1c
+   4:	00000002 	srl	zero,zero,0x0
+   8:	00040000 	sll	zero,a0,0x0
+   c:	00000000 	nop
+  10:	9fc00040 	0x9fc00040
+  14:	0000006c 	0x6c
+	...
+  20:	0000001c 	0x1c
+  24:	005a0002 	0x5a0002
+  28:	00040000 	sll	zero,a0,0x0
+  2c:	00000000 	nop
+  30:	9fc00000 	0x9fc00000
+  34:	00000040 	ssnop
+	...
+  40:	0000001c 	0x1c
+  44:	00b40002 	0xb40002
+  48:	00040000 	sll	zero,a0,0x0
+  4c:	00000000 	nop
+  50:	80000000 	lb	zero,0(zero)
+  54:	00000198 	0x198
+	...
+  60:	0000001c 	0x1c
+  64:	01140002 	0x1140002
+  68:	00040000 	sll	zero,a0,0x0
+  6c:	00000000 	nop
+  70:	80000200 	lb	zero,512(zero)
+  74:	00000004 	sllv	zero,zero,zero
+	...
+  80:	0000001c 	0x1c
+  84:	016f0002 	0x16f0002
+  88:	00040000 	sll	zero,a0,0x0
+  8c:	00000000 	nop
+  90:	80000204 	lb	zero,516(zero)
+  94:	00000190 	0x190
+	...
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	00000056 	0x56
+   4:	00000002 	srl	zero,zero,0x0
+   8:	01040000 	0x1040000
+   c:	00000000 	nop
+  10:	9fc00040 	0x9fc00040
+  14:	9fc000ac 	0x9fc000ac
+  18:	30747263 	andi	s4,v1,0x7263
+  1c:	4300532e 	c0	0x100532e
+  20:	73555c3a 	0x73555c3a
+  24:	5c737265 	0x5c737265
+  28:	6f6e654c 	0x6f6e654c
+  2c:	445c6f76 	0x445c6f76
+  30:	746b7365 	jalx	1adcd94 <__memory_size+0x1abd594>
+  34:	6d5c706f 	0x6d5c706f
+  38:	70696d79 	0x70696d79
+  3c:	5f635f73 	0x5f635f73
+  40:	706d6574 	q16sll	xr5,xr9,xr5,xr11,1
+  44:	6574616c 	0x6574616c
+  48:	554e4700 	bnel	t2,t6,11c4c <__isr_vec_space+0x11c2c>
+  4c:	20534120 	addi	s3,v0,16672
+  50:	34322e32 	ori	s2,at,0x2e32
+  54:	0030392e 	0x30392e
+  58:	00568001 	0x568001
+  5c:	00020000 	sll	zero,v0,0x0
+  60:	00000014 	0x14
+  64:	00480104 	0x480104
+  68:	00000000 	nop
+  6c:	00409fc0 	0x409fc0
+  70:	6f629fc0 	0x6f629fc0
+  74:	532e746f 	beql	t9,t6,1d234 <__isr_vec_space+0x1d214>
+  78:	5c3a4300 	0x5c3a4300
+  7c:	72657355 	s32sdi	xr13,s3,1392
+  80:	654c5c73 	0x654c5c73
+  84:	6f766f6e 	0x6f766f6e
+  88:	7365445c 	udi12	k1,a1,t0,0x11
+  8c:	706f746b 	s16std	xr1,v1,-70,ptn1
+  90:	6d796d5c 	0x6d796d5c
+  94:	5f737069 	0x5f737069
+  98:	65745f63 	0x65745f63
+  9c:	616c706d 	0x616c706d
+  a0:	47006574 	bz.b	$w0,19674 <__isr_vec_space+0x19654>
+  a4:	4120554e 	0x4120554e
+  a8:	2e322053 	sltiu	s2,s1,8275
+  ac:	392e3432 	xori	t6,t1,0x3432
+  b0:	80010030 	lb	at,48(zero)
+  b4:	0000005c 	0x5c
+  b8:	00280002 	ror	zero,t0,0x0
+  bc:	01040000 	0x1040000
+  c0:	0000008a 	0x8a
+  c4:	80000000 	lb	zero,0(zero)
+  c8:	80000198 	lb	zero,408(zero)
+  cc:	65637865 	0x65637865
+  d0:	6f697470 	0x6f697470
+  d4:	532e736e 	beql	t9,t6,1ce90 <__isr_vec_space+0x1ce70>
+  d8:	5c3a4300 	0x5c3a4300
+  dc:	72657355 	s32sdi	xr13,s3,1392
+  e0:	654c5c73 	0x654c5c73
+  e4:	6f766f6e 	0x6f766f6e
+  e8:	7365445c 	udi12	k1,a1,t0,0x11
+  ec:	706f746b 	s16std	xr1,v1,-70,ptn1
+  f0:	6d796d5c 	0x6d796d5c
+  f4:	5f737069 	0x5f737069
+  f8:	65745f63 	0x65745f63
+  fc:	616c706d 	0x616c706d
+ 100:	47006574 	bz.b	$w0,196d4 <__isr_vec_space+0x196b4>
+ 104:	4120554e 	0x4120554e
+ 108:	2e322053 	sltiu	s2,s1,8275
+ 10c:	392e3432 	xori	t6,t1,0x3432
+ 110:	80010030 	lb	at,48(zero)
+ 114:	00000057 	0x57
+ 118:	003c0002 	ror	zero,gp,0x0
+ 11c:	01040000 	0x1040000
+ 120:	000000d7 	0xd7
+ 124:	80000200 	lb	zero,512(zero)
+ 128:	80000204 	lb	zero,516(zero)
+ 12c:	6d6d7564 	0x6d6d7564
+ 130:	00532e79 	0x532e79
+ 134:	555c3a43 	bnel	t2,gp,ea44 <__isr_vec_space+0xea24>
+ 138:	73726573 	d32sar	xr5,xr9,xr9,xr12,13
+ 13c:	6e654c5c 	0x6e654c5c
+ 140:	5c6f766f 	0x5c6f766f
+ 144:	6b736544 	0x6b736544
+ 148:	5c706f74 	0x5c706f74
+ 14c:	696d796d 	0x696d796d
+ 150:	635f7370 	0x635f7370
+ 154:	6d65745f 	0x6d65745f
+ 158:	74616c70 	jalx	185b1c0 <__memory_size+0x183b9c0>
+ 15c:	4e470065 	c3	0x470065
+ 160:	53412055 	beql	k0,at,82b8 <__isr_vec_space+0x8298>
+ 164:	322e3220 	andi	t6,s1,0x3220
+ 168:	30392e34 	andi	t9,at,0x2e34
+ 16c:	36800100 	ori	zero,s4,0x100
+ 170:	04000001 	bltz	zero,178 <__isr_vec_space+0x158>
+ 174:	00005000 	sll	t2,zero,0x0
+ 178:	6b010400 	0x6b010400
+ 17c:	01000000 	0x1000000
+ 180:	000000ec 	0xec
+ 184:	0000003c 	0x3c
+ 188:	80000204 	lb	zero,516(zero)
+ 18c:	00000190 	0x190
+ 190:	0000010e 	0x10e
+ 194:	12060102 	beq	s0,a2,5a0 <__isr_vec_space+0x580>
+ 198:	03000000 	0x3000000
+ 19c:	00000000 	nop
+ 1a0:	00371c02 	ror	v1,s7,0x10
+ 1a4:	01020000 	0x1020000
+ 1a8:	00001008 	0x1008
+ 1ac:	05020200 	bltzl	t0,9b0 <__isr_vec_space+0x990>
+ 1b0:	000000f3 	tltu	zero,zero,0x3
+ 1b4:	1e070202 	0x1e070202
+ 1b8:	02000000 	0x2000000
+ 1bc:	00e30504 	0xe30504
+ 1c0:	31030000 	andi	v1,t0,0x0
+ 1c4:	02000000 	0x2000000
+ 1c8:	00005e38 	0x5e38
+ 1cc:	07040200 	0x7040200
+ 1d0:	000000c3 	sra	zero,zero,0x3
+ 1d4:	de050802 	ldc3	$5,2050(s0)
+ 1d8:	02000000 	0x2000000
+ 1dc:	00be0708 	0xbe0708
+ 1e0:	02030000 	0x2030000
+ 1e4:	03000000 	0x3000000
+ 1e8:	00002c2a 	0x2c2a
+ 1ec:	00330300 	0x330300
+ 1f0:	42030000 	c0	0x30000
+ 1f4:	00000053 	mtlhx	zero
+ 1f8:	69050404 	0x69050404
+ 1fc:	0200746e 	0x200746e
+ 200:	00c80704 	0xc80704
+ 204:	0a050000 	j	8140000 <__memory_size+0x8120800>
+ 208:	01000000 	0x1000000
+ 20c:	00020421 	0x20421
+ 210:	00004c80 	sll	t1,zero,0x12
+ 214:	b99c0100 	swr	gp,256(t4)
+ 218:	06000000 	bltz	s0,21c <__isr_vec_space+0x1fc>
+ 21c:	2201006a 	addi	at,s0,106
+ 220:	000000b9 	0xb9
+ 224:	00789102 	0x789102
+ 228:	00009007 	srav	s2,zero,zero
+ 22c:	00660800 	0x660800
+ 230:	06010000 	bgez	s0,234 <__isr_vec_space+0x214>
+ 234:	00000089 	0x89
+ 238:	80000250 	lb	zero,592(zero)
+ 23c:	00000144 	0x144
+ 240:	01139c01 	0x1139c01
+ 244:	6e060000 	0x6e060000
+ 248:	13070100 	beq	t8,a3,64c <__isr_vec_space+0x62c>
+ 24c:	03000001 	movf	zero,t8,$fcc0
+ 250:	0677e891 	0x677e891
+ 254:	00626966 	0x626966
+ 258:	012f0801 	0x12f0801
+ 25c:	91030000 	lbu	v1,0(t0)
+ 260:	6c0977ec 	0x6c0977ec
+ 264:	28800002 	slti	zero,a0,2
+ 268:	06000001 	bltz	s0,270 <__isr_vec_space+0x250>
+ 26c:	10010069 	beq	zero,at,414 <__isr_vec_space+0x3f4>
+ 270:	00000134 	teq	zero,zero,0x4
+ 274:	0a6c9102 	j	9b24408 <__memory_size+0x9b04c08>
+ 278:	80000368 	lb	zero,872(zero)
+ 27c:	00000097 	0x97
+ 280:	73070000 	madd	t8,a3
+ 284:	0b000000 	j	c000000 <__memory_size+0xbfe0800>
+ 288:	0000007e 	0x7e
+ 28c:	00000128 	0x128
+ 290:	0001280c 	syscall	0x4a0
+ 294:	0200ff00 	0x200ff00
+ 298:	00d50704 	0xd50704
+ 29c:	18070000 	0x18070000
+ 2a0:	07000001 	bltz	t8,2a8 <__isr_vec_space+0x288>
+ 2a4:	00000089 	0x89
+	...
+
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	b	4408 <__isr_vec_space+0x43e8>
+   4:	12011106 	beq	s0,at,4420 <__isr_vec_space+0x4400>
+   8:	1b080301 	0x1b080301
+   c:	13082508 	beq	t8,t0,9430 <__isr_vec_space+0x9410>
+  10:	00000005 	lsa	zero,zero,zero,0x1
+  14:	10001101 	b	441c <__isr_vec_space+0x43fc>
+  18:	12011106 	beq	s0,at,4434 <__isr_vec_space+0x4414>
+  1c:	1b080301 	0x1b080301
+  20:	13082508 	beq	t8,t0,9444 <__isr_vec_space+0x9424>
+  24:	00000005 	lsa	zero,zero,zero,0x1
+  28:	10001101 	b	4430 <__isr_vec_space+0x4410>
+  2c:	12011106 	beq	s0,at,4448 <__isr_vec_space+0x4428>
+  30:	1b080301 	0x1b080301
+  34:	13082508 	beq	t8,t0,9458 <__isr_vec_space+0x9438>
+  38:	00000005 	lsa	zero,zero,zero,0x1
+  3c:	10001101 	b	4444 <__isr_vec_space+0x4424>
+  40:	12011106 	beq	s0,at,445c <__isr_vec_space+0x443c>
+  44:	1b080301 	0x1b080301
+  48:	13082508 	beq	t8,t0,946c <__isr_vec_space+0x944c>
+  4c:	00000005 	lsa	zero,zero,zero,0x1
+  50:	25011101 	addiu	at,t0,4353
+  54:	030b130e 	0x30b130e
+  58:	110e1b0e 	beq	t0,t6,6c94 <__isr_vec_space+0x6c74>
+  5c:	10061201 	beq	zero,a2,4864 <__isr_vec_space+0x4844>
+  60:	02000017 	0x2000017
+  64:	0b0b0024 	j	c2c0090 <__memory_size+0xc2a0890>
+  68:	0e030b3e 	jal	80c2cf8 <__memory_size+0x80a34f8>
+  6c:	16030000 	bne	s0,v1,70 <__isr_vec_space+0x50>
+  70:	3a0e0300 	xori	t6,s0,0x300
+  74:	490b3b0b 	bc2tl	$cc2,eca4 <__isr_vec_space+0xec84>
+  78:	04000013 	bltz	zero,c8 <__isr_vec_space+0xa8>
+  7c:	0b0b0024 	j	c2c0090 <__memory_size+0xc2a0890>
+  80:	08030b3e 	j	c2cf8 <__memory_size+0xa34f8>
+  84:	2e050000 	sltiu	a1,s0,0
+  88:	03193f01 	0x3193f01
+  8c:	3b0b3a0e 	xori	t3,t8,0x3a0e
+  90:	1201110b 	beq	s0,at,44c0 <__isr_vec_space+0x44a0>
+  94:	97184006 	lhu	t8,16390(t8)
+  98:	13011942 	beq	t8,at,65a4 <__isr_vec_space+0x6584>
+  9c:	34060000 	li	a2,0x0
+  a0:	3a080300 	xori	t0,s0,0x300
+  a4:	490b3b0b 	bc2tl	$cc2,ecd4 <__isr_vec_space+0xecb4>
+  a8:	00180213 	0x180213
+  ac:	00350700 	0x350700
+  b0:	00001349 	0x1349
+  b4:	3f012e08 	0x3f012e08
+  b8:	3a0e0319 	xori	t6,s0,0x319
+  bc:	490b3b0b 	bc2tl	$cc2,ecec <__isr_vec_space+0xeccc>
+  c0:	12011113 	beq	s0,at,4510 <__isr_vec_space+0x44f0>
+  c4:	97184006 	lhu	t8,16390(t8)
+  c8:	13011942 	beq	t8,at,65d4 <__isr_vec_space+0x65b4>
+  cc:	0b090000 	j	c240000 <__memory_size+0xc220800>
+  d0:	12011101 	beq	s0,at,44d8 <__isr_vec_space+0x44b8>
+  d4:	0a000006 	j	8000018 <__memory_size+0x7fe0818>
+  d8:	00018289 	0x18289
+  dc:	13310111 	beq	t9,s1,524 <__isr_vec_space+0x504>
+  e0:	010b0000 	0x10b0000
+  e4:	01134901 	0x1134901
+  e8:	0c000013 	jal	4c <__isr_vec_space+0x2c>
+  ec:	13490021 	beq	k0,t1,174 <__isr_vec_space+0x154>
+  f0:	00000b2f 	0xb2f
+	...
+
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	00000044 	0x44
+   4:	001d0002 	srl	zero,sp,0x0
+   8:	01010000 	0x1010000
+   c:	000d0efb 	0xd0efb
+  10:	01010101 	0x1010101
+  14:	01000000 	0x1000000
+  18:	00010000 	sll	zero,at,0x0
+  1c:	30747263 	andi	s4,v1,0x7263
+  20:	0000532e 	0x532e
+  24:	00000000 	nop
+  28:	00400205 	0x400205
+  2c:	0f039fc0 	jal	c0e7f00 <__memory_size+0xc0c8700>
+  30:	84844c01 	lh	a0,19457(a0)
+  34:	4b848383 	c2	0x1848383
+  38:	4e4c8513 	c3	0x4c8513
+  3c:	4d4b4b4b 	0x4d4b4b4b
+  40:	024b8583 	0x24b8583
+  44:	01010008 	0x1010008
+  48:	0000003e 	0x3e
+  4c:	001d0002 	srl	zero,sp,0x0
+  50:	01010000 	0x1010000
+  54:	000d0efb 	0xd0efb
+  58:	01010101 	0x1010101
+  5c:	01000000 	0x1000000
+  60:	00010000 	sll	zero,at,0x0
+  64:	746f6f62 	jalx	1bdbd88 <__memory_size+0x1bbc588>
+  68:	0000532e 	0x532e
+  6c:	00000000 	nop
+  70:	00000205 	0x205
+  74:	13039fc0 	beq	t8,v1,fffe7f78 <__entry+0x403e7f78>
+  78:	4d835101 	0x4d835101
+  7c:	4c834e4d 	0x4c834e4d
+  80:	504e4b83 	beql	v0,t6,12e90 <__isr_vec_space+0x12e70>
+  84:	0004024b 	0x4024b
+  88:	00490101 	0x490101
+  8c:	00020000 	sll	zero,v0,0x0
+  90:	00000023 	negu	zero,zero
+  94:	0efb0101 	jal	bec0404 <__memory_size+0xbea0c04>
+  98:	0101000d 	break	0x101
+  9c:	00000101 	0x101
+  a0:	00000100 	sll	zero,zero,0x4
+  a4:	78650001 	bmnzi.b	$w0,$w0,0x65
+  a8:	74706563 	jalx	1c1958c <__memory_size+0x1bf9d8c>
+  ac:	736e6f69 	0x736e6f69
+  b0:	0000532e 	0x532e
+  b4:	00000000 	nop
+  b8:	00000205 	0x205
+  bc:	2c038000 	sltiu	v1,zero,-32768
+  c0:	02838301 	0x2838301
+  c4:	83831770 	lb	v1,6000(gp)
+  c8:	83177002 	lb	s7,28674(t8)
+  cc:	17700283 	bne	k1,s0,adc <__isr_vec_space+0xabc>
+  d0:	08028383 	j	a0e0c <__memory_size+0x8160c>
+  d4:	33010100 	andi	at,t8,0x100
+  d8:	02000000 	0x2000000
+  dc:	00001e00 	sll	v1,zero,0x18
+  e0:	fb010100 	sdc2	$1,256(t8)
+  e4:	01000d0e 	0x1000d0e
+  e8:	00010101 	0x10101
+  ec:	00010000 	sll	zero,at,0x0
+  f0:	64000100 	0x64000100
+  f4:	796d6d75 	0x796d6d75
+  f8:	0000532e 	0x532e
+  fc:	00000000 	nop
+ 100:	02000205 	0x2000205
+ 104:	3a038000 	xori	v1,s0,0x8000
+ 108:	00040201 	0x40201
+ 10c:	014f0101 	0x14f0101
+ 110:	00020000 	sll	zero,v0,0x0
+ 114:	000000ff 	0xff
+ 118:	0efb0101 	jal	bec0404 <__memory_size+0xbea0c04>
+ 11c:	0101000d 	break	0x101
+ 120:	00000101 	0x101
+ 124:	00000100 	sll	zero,zero,0x4
+ 128:	5c3a6301 	0x5c3a6301
+ 12c:	676f7270 	0x676f7270
+ 130:	317e6172 	andi	s8,t3,0x6172
+ 134:	616d695c 	0x616d695c
+ 138:	616e6967 	0x616e6967
+ 13c:	6e6f6974 	0x6e6f6974
+ 140:	63657420 	0x63657420
+ 144:	6c6f6e68 	0x6c6f6e68
+ 148:	6569676f 	0x6569676f
+ 14c:	6f745c73 	0x6f745c73
+ 150:	68636c6f 	0x68636c6f
+ 154:	736e6961 	0x736e6961
+ 158:	70696d5c 	udi12	v1,t1,t5,0x15
+ 15c:	746d2d73 	jalx	1b4b5cc <__memory_size+0x1b2bdcc>
+ 160:	6c652d69 	0x6c652d69
+ 164:	30325c66 	andi	s2,at,0x5c66
+ 168:	302e3631 	andi	t6,at,0x3631
+ 16c:	33302d35 	andi	s0,t9,0x2d35
+ 170:	70696d5c 	udi12	v1,t1,t5,0x15
+ 174:	746d2d73 	jalx	1b4b5cc <__memory_size+0x1b2bdcc>
+ 178:	6c652d69 	0x6c652d69
+ 17c:	6e695c66 	0x6e695c66
+ 180:	64756c63 	0x64756c63
+ 184:	616d5c65 	0x616d5c65
+ 188:	6e696863 	0x6e696863
+ 18c:	3a630065 	xori	v1,s3,0x65
+ 190:	6f72705c 	0x6f72705c
+ 194:	7e617267 	0x7e617267
+ 198:	6d695c31 	0x6d695c31
+ 19c:	6e696761 	0x6e696761
+ 1a0:	6f697461 	0x6f697461
+ 1a4:	6574206e 	0x6574206e
+ 1a8:	6f6e6863 	0x6f6e6863
+ 1ac:	69676f6c 	0x69676f6c
+ 1b0:	745c7365 	jalx	171cd94 <__memory_size+0x16fd594>
+ 1b4:	636c6f6f 	0x636c6f6f
+ 1b8:	6e696168 	0x6e696168
+ 1bc:	696d5c73 	0x696d5c73
+ 1c0:	6d2d7370 	0x6d2d7370
+ 1c4:	652d6974 	0x652d6974
+ 1c8:	325c666c 	andi	gp,s2,0x666c
+ 1cc:	2e363130 	sltiu	s6,s1,12592
+ 1d0:	302d3530 	andi	t5,at,0x3530
+ 1d4:	696d5c33 	0x696d5c33
+ 1d8:	6d2d7370 	0x6d2d7370
+ 1dc:	652d6974 	0x652d6974
+ 1e0:	695c666c 	0x695c666c
+ 1e4:	756c636e 	jalx	5b18db8 <__memory_size+0x5af95b8>
+ 1e8:	00006564 	0x6564
+ 1ec:	6e69616d 	0x6e69616d
+ 1f0:	0000632e 	0x632e
+ 1f4:	645f0000 	0x645f0000
+ 1f8:	75616665 	jalx	5859994 <__memory_size+0x583a194>
+ 1fc:	745f746c 	jalx	17dd1b0 <__memory_size+0x17bd9b0>
+ 200:	73657079 	0x73657079
+ 204:	0100682e 	0x100682e
+ 208:	74730000 	jalx	1cc0000 <__memory_size+0x1ca0800>
+ 20c:	746e6964 	jalx	1b9a590 <__memory_size+0x1b7ad90>
+ 210:	0200682e 	0x200682e
+ 214:	00000000 	nop
+ 218:	02040205 	0x2040205
+ 21c:	20038000 	addi	v1,zero,-32768
+ 220:	02004c01 	0x2004c01
+ 224:	08060304 	j	180c10 <__memory_size+0x161410>
+ 228:	240206ac 	li	v0,1708
+ 22c:	82620313 	lb	v0,787(s3)
+ 230:	4c864bf5 	0x4c864bf5
+ 234:	4bbbbb48 	c2	0x1bbbb48
+ 238:	02003d08 	0x2003d08
+ 23c:	ad080304 	sw	t0,772(t0)
+ 240:	03040200 	0x3040200
+ 244:	02114402 	0x2114402
+ 248:	004c1624 	0x4c1624
+ 24c:	08030402 	j	c1008 <__memory_size+0xa1808>
+ 250:	040200ad 	bltzl	zero,508 <__isr_vec_space+0x4e8>
+ 254:	00750803 	0x750803
+ 258:	80030402 	lb	v1,1026(zero)
+ 25c:	01002c02 	0x1002c02
+ 260:	Address 0x0000000000000260 is out of bounds.
+
+
+Disassembly of section .debug_frame:
+
+00000000 <.debug_frame>:
+   0:	0000000c 	syscall
+   4:	ffffffff 	sdc3	$31,-1(ra)
+   8:	7c010001 	0x7c010001
+   c:	001d0d1f 	0x1d0d1f
+  10:	00000014 	0x14
+  14:	00000000 	nop
+  18:	80000204 	lb	zero,516(zero)
+  1c:	0000004c 	syscall	0x1
+  20:	02080e44 	0x2080e44
+  24:	00000e48 	0xe48
+  28:	00000018 	mult	zero,zero
+  2c:	00000000 	nop
+  30:	80000250 	lb	zero,592(zero)
+  34:	00000144 	0x144
+  38:	08a80e44 	j	2a03910 <__memory_size+0x29e4110>
+  3c:	91019f4c 	lbu	at,-24756(t0)
+  40:	00039002 	srl	s2,v1,0x0
+
+Disassembly of section .debug_str:
+
+00000000 <.debug_str>:
+   0:	69755f5f 	0x69755f5f
+   4:	5f38746e 	0x5f38746e
+   8:	65640074 	0x65640074
+   c:	0079616c 	0x79616c
+  10:	69736e75 	0x69736e75
+  14:	64656e67 	0x64656e67
+  18:	61686320 	0x61686320
+  1c:	68730072 	0x68730072
+  20:	2074726f 	addi	s4,v1,29295
+  24:	69736e75 	0x69736e75
+  28:	64656e67 	0x64656e67
+  2c:	746e6920 	jalx	1b9a480 <__memory_size+0x1b7ac80>
+  30:	755f5f00 	jalx	57d7c00 <__memory_size+0x57b8400>
+  34:	33746e69 	andi	s4,k1,0x6e69
+  38:	00745f32 	tlt	v1,s4,0x17c
+  3c:	555c3a43 	bnel	t2,gp,e94c <__isr_vec_space+0xe92c>
+  40:	73726573 	d32sar	xr5,xr9,xr9,xr12,13
+  44:	6e654c5c 	0x6e654c5c
+  48:	5c6f766f 	0x5c6f766f
+  4c:	6b736544 	0x6b736544
+  50:	5c706f74 	0x5c706f74
+  54:	696d796d 	0x696d796d
+  58:	635f7370 	0x635f7370
+  5c:	6d65745f 	0x6d65745f
+  60:	74616c70 	jalx	185b1c0 <__memory_size+0x183b9c0>
+  64:	616d0065 	0x616d0065
+  68:	47006e69 	bz.b	$w0,1ba10 <__isr_vec_space+0x1b9f0>
+  6c:	4320554e 	c0	0x120554e
+  70:	392e3420 	xori	t6,t1,0x3420
+  74:	2d20322e 	sltiu	zero,t1,12846
+  78:	206c656d 	addi	t4,v1,25965
+  7c:	72616d2d 	s16sdi	xr4,s3,182,ptn0
+  80:	6d3d6863 	0x6d3d6863
+  84:	636b3431 	0x636b3431
+  88:	736d2d20 	0x736d2d20
+  8c:	2d74666f 	sltiu	s4,t3,26223
+  90:	616f6c66 	0x616f6c66
+  94:	6d2d2074 	0x6d2d2074
+  98:	20746c70 	addi	s4,v1,27760
+  9c:	70696d2d 	s16sdi	xr4,v1,182,ptn1
+  a0:	72323373 	d32sar	xr13,xr12,xr8,xr12,8
+  a4:	6d2d2032 	0x6d2d2032
+  a8:	636e7973 	0x636e7973
+  ac:	6d2d2069 	0x6d2d2069
+  b0:	3d696261 	0x3d696261
+  b4:	2d203233 	sltiu	zero,t1,12851
+  b8:	4f2d2067 	c3	0x12d2067
+  bc:	6f6c0031 	0x6f6c0031
+  c0:	6c20676e 	0x6c20676e
+  c4:	20676e6f 	addi	a3,v1,28271
+  c8:	69736e75 	0x69736e75
+  cc:	64656e67 	0x64656e67
+  d0:	746e6920 	jalx	1b9a480 <__memory_size+0x1b7ac80>
+  d4:	7a697300 	nori.b	$w12,$w14,0x69
+  d8:	70797465 	s8sdi	xr1,v1,93,
+  dc:	6f6c0065 	0x6f6c0065
+  e0:	6c20676e 	0x6c20676e
+  e4:	20676e6f 	addi	a3,v1,28271
+  e8:	00746e69 	0x746e69
+  ec:	6e69616d 	0x6e69616d
+  f0:	7300632e 	0x7300632e
+  f4:	74726f68 	jalx	1c9bda0 <__memory_size+0x1c7c5a0>
+  f8:	746e6920 	jalx	1b9a480 <__memory_size+0x1b7ac80>
+  fc:	Address 0x00000000000000fc is out of bounds.
+
+
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	9fc00040 	0x9fc00040
+	...
+  20:	9fc00000 	0x9fc00000
+	...
+  40:	80000000 	lb	zero,0(zero)
+	...
+  60:	80000200 	lb	zero,512(zero)
+	...
+  80:	80000200 	lb	zero,512(zero)
+	...
+  a0:	80000200 	lb	zero,512(zero)
+	...
+  c0:	80000200 	lb	zero,512(zero)
+	...
+  e0:	80000200 	lb	zero,512(zero)
+	...
+ 100:	80000204 	lb	zero,516(zero)
+	...
+ 114:	00000008 	jr	zero
+ 118:	0000001d 	0x1d
+ 11c:	0000001f 	0x1f
+ 120:	80000250 	lb	zero,592(zero)
+ 124:	80030000 	lb	v1,0(zero)
+ 128:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 134:	00000428 	0x428
+ 138:	0000001d 	0x1d
+ 13c:	0000001f 	0x1f
+
+Disassembly of section .gnu.attributes:
+
+00000000 <.gnu.attributes>:
+   0:	00000f41 	0xf41
+   4:	756e6700 	jalx	5b99c00 <__memory_size+0x5b7a400>
+   8:	00070100 	sll	zero,a3,0x4
+   c:	03040000 	0x3040000
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	3a434347 	xori	v1,s2,0x4347
+   4:	6f432820 	0x6f432820
+   8:	63736564 	0x63736564
+   c:	20657061 	addi	a1,v1,28769
+  10:	20554e47 	addi	s5,v0,20039
+  14:	6c6f6f54 	0x6c6f6f54
+  18:	30322073 	andi	s2,at,0x2073
+  1c:	302e3631 	andi	t6,at,0x3631
+  20:	33302d35 	andi	s0,t9,0x2d35
+  24:	726f6620 	0x726f6620
+  28:	50494d20 	beql	v0,t1,134ac <__isr_vec_space+0x1348c>
+  2c:	544d2053 	bnel	v0,t5,817c <__isr_vec_space+0x815c>
+  30:	61422049 	0x61422049
+  34:	4d206572 	0x4d206572
+  38:	6c617465 	0x6c617465
+  3c:	2e342029 	sltiu	s4,s1,8233
+  40:	00322e39 	0x322e39

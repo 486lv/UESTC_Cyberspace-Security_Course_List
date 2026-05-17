@@ -1,0 +1,46 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22_isim_beh.exe -prj F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22_beh.prj work.sccomp_dataflow_tb_fig5_22 work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/shift.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/mux8.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/addsub32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccu_dataflow.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/regfile.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/mux4x32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/mux2x5.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/mux2x32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/dff32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/alu.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/scinstmem.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/scdatamem.v" into library work
+WARNING:HDLCompiler:568 - "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/scdatamem.v" Line 19: Constant value is truncated to fit in <32> bits.
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccpu_dataflow.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module sccu_dataflow
+Compiling module dff32
+Compiling module mux2x32
+Compiling module mux2x5
+Compiling module mux4x32
+Compiling module regfile
+Compiling module addsub32
+Compiling module shift
+Compiling module mux9
+Compiling module alu
+Compiling module sccpu_dataflow
+Compiling module scinstmem
+Compiling module scdatamem
+Compiling module sccomp_dataflow
+Compiling module sccomp_dataflow_tb_fig5_22
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22_isim_beh.exe
+Fuse Memory Usage: 32356 KB
+Fuse CPU Usage: 608 ms

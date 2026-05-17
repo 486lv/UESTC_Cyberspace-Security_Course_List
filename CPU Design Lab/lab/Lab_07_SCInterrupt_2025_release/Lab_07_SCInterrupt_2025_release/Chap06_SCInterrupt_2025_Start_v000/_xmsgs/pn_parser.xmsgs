@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/add.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/addsub32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/alu_ov.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_16.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_4.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_8.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/dff32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/dffe32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/g_p.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/mux2x32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/mux2x5.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/mux4x32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/regfile.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt_tb_fig6_12.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sccpu_intr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sccu_intr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/scd_intr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sci_intr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/shift.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

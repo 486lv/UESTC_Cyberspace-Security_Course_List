@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 03 15:25:09 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Segs<2>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "Segs<3>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Segs<4>" LOCATE = SITE "AB19" LEVEL 1;
+COMP "Segs<5>" LOCATE = SITE "P20" LEVEL 1;
+COMP "Segs<6>" LOCATE = SITE "Y21" LEVEL 1;
+COMP "Switch<0>" LOCATE = SITE "V5" LEVEL 1;
+COMP "Switch<1>" LOCATE = SITE "U4" LEVEL 1;
+COMP "Switch<2>" LOCATE = SITE "V3" LEVEL 1;
+COMP "Switch<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "En" LOCATE = SITE "M17" LEVEL 1;
+COMP "Btn0" LOCATE = SITE "E6" LEVEL 1;
+COMP "Segs<0>" LOCATE = SITE "AA21" LEVEL 1;
+COMP "Segs<1>" LOCATE = SITE "AA22" LEVEL 1;
+SCHEMATIC END;
+

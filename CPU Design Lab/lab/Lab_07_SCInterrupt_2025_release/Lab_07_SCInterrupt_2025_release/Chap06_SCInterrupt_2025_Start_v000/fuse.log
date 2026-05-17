@@ -1,0 +1,64 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt_tb_fig6_12_isim_beh.exe -prj F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt_tb_fig6_12_beh.prj work.sc_interrupt_tb_fig6_12 work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/g_p.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/add.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_2.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_4.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_8.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_16.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla_32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/cla32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/shift.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/mux4x32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/addsub32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sccu_intr.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/regfile.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/mux2x5.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/mux2x32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/dffe32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/dff32.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/alu_ov.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sci_intr.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/scd_intr.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sccpu_intr.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt.v" into library work
+Analyzing Verilog file "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt_tb_fig6_12.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sccpu_intr.v" Line 32: Port co is not connected to this instance
+WARNING:HDLCompiler:1016 - "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sccpu_intr.v" Line 33: Port co is not connected to this instance
+WARNING:HDLCompiler:1016 - "F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/addsub32.v" Line 9: Port co is not connected to this instance
+Completed static elaboration
+Compiling module sccu_intr
+Compiling module dff32
+Compiling module add
+Compiling module g_p
+Compiling module cla_2
+Compiling module cla_4
+Compiling module cla_8
+Compiling module cla_16
+Compiling module cla_32
+Compiling module cla32
+Compiling module mux2x32
+Compiling module mux2x5
+Compiling module mux4x32
+Compiling module regfile
+Compiling module addsub32
+Compiling module shift
+Compiling module alu_ov
+Compiling module dffe32
+Compiling module sccpu_intr
+Compiling module sci_intr
+Compiling module scd_intr
+Compiling module sc_interrupt
+Compiling module sc_interrupt_tb_fig6_12
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 24 Verilog Units
+Built simulation executable F:/lab/lab/Lab_07_SCInterrupt_2025_release/Lab_07_SCInterrupt_2025_release/Chap06_SCInterrupt_2025_Start_v000/sc_interrupt_tb_fig6_12_isim_beh.exe
+Fuse Memory Usage: 32520 KB
+Fuse CPU Usage: 592 ms

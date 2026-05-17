@@ -1,0 +1,6 @@
+verilog work "../../lab/Lab_05_ALU_2025_release/shift.v"
+verilog work "../../lab/Lab_05_ALU_2025_release/mux4x32.v"
+verilog work "../../lab/Lab_05_ALU_2025_release/lab5-fin/addsub32.v"
+verilog work "../../lab/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu.v"
+verilog work "alu_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

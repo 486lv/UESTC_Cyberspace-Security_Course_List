@@ -1,0 +1,6 @@
+verilog work "shift.v"
+verilog work "mux4x32.v"
+verilog work "addsub32.v"
+verilog work "alu.v"
+verilog work "C:/Users/Lenovo/Desktop/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu_tb_fig4_7.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

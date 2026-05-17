@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ck2/test222/test222/SCCPU_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="SCCPU_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/SCCPU_tb/pcsource" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcsource[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pcsource[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/if_inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_inst[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/id_inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_inst[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/exe_alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">exe_alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_alu_result[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/mem_alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_alu_result[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/wb_alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_alu_result[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/Clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SCCPU_tb/Resetn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Resetn</obj_property>
+      <obj_property name="ObjectShortName">Resetn</obj_property>
+   </wvobject>
+</wave_config>

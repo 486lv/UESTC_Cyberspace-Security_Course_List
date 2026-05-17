@@ -1,0 +1,101 @@
+ISim log file
+Running: D:\Lab_06_SC_2025_Start\sccomp_dataflow_tb_fig5_22_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 3000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                   0  pc=00000000  inst=3c010000  aluout=00000000  memout=xxxxxxxx
+                   5  pc=00000000  inst=3c010000  aluout=00000000  memout=00000000
+                  20  pc=00000004  inst=34240050  aluout=00000050  memout=00000000
+                  25  pc=00000004  inst=34240050  aluout=00000050  memout=000000a3
+                  40  pc=00000008  inst=20050004  aluout=00000004  memout=000000a3
+                  45  pc=00000008  inst=20050004  aluout=00000004  memout=00000000
+                  60  pc=0000000c  inst=0c000018  aluout=00000000  memout=00000000
+                  80  pc=00000060  inst=00004020  aluout=00000000  memout=00000000
+                 100  pc=00000064  inst=8c890000  aluout=00000050  memout=00000000
+                 105  pc=00000064  inst=8c890000  aluout=00000050  memout=000000a3
+                 120  pc=00000068  inst=20840004  aluout=00000054  memout=000000a3
+                 125  pc=00000068  inst=20840004  aluout=00000054  memout=00000027
+                 140  pc=0000006c  inst=01094020  aluout=000000a3  memout=00000027
+                 145  pc=0000006c  inst=01094020  aluout=000000a3  memout=00000000
+                 160  pc=00000070  inst=20a5ffff  aluout=00000003  memout=00000000
+                 180  pc=00000074  inst=14a0fffb  aluout=00000003  memout=00000000
+                 200  pc=00000064  inst=8c890000  aluout=00000054  memout=00000000
+                 205  pc=00000064  inst=8c890000  aluout=00000054  memout=00000027
+                 220  pc=00000068  inst=20840004  aluout=00000058  memout=00000027
+                 225  pc=00000068  inst=20840004  aluout=00000058  memout=00000079
+                 240  pc=0000006c  inst=01094020  aluout=000000ca  memout=00000079
+                 245  pc=0000006c  inst=01094020  aluout=000000ca  memout=00000000
+                 260  pc=00000070  inst=20a5ffff  aluout=00000002  memout=00000000
+                 280  pc=00000074  inst=14a0fffb  aluout=00000002  memout=00000000
+                 300  pc=00000064  inst=8c890000  aluout=00000058  memout=00000000
+                 305  pc=00000064  inst=8c890000  aluout=00000058  memout=00000079
+                 320  pc=00000068  inst=20840004  aluout=0000005c  memout=00000079
+                 325  pc=00000068  inst=20840004  aluout=0000005c  memout=00000115
+                 340  pc=0000006c  inst=01094020  aluout=00000143  memout=00000115
+                 345  pc=0000006c  inst=01094020  aluout=00000143  memout=00000000
+                 360  pc=00000070  inst=20a5ffff  aluout=00000001  memout=00000000
+                 380  pc=00000074  inst=14a0fffb  aluout=00000001  memout=00000000
+                 400  pc=00000064  inst=8c890000  aluout=0000005c  memout=00000000
+                 405  pc=00000064  inst=8c890000  aluout=0000005c  memout=00000115
+                 420  pc=00000068  inst=20840004  aluout=00000060  memout=00000115
+                 425  pc=00000068  inst=20840004  aluout=00000060  memout=00000000
+                 440  pc=0000006c  inst=01094020  aluout=00000258  memout=00000000
+                 445  pc=0000006c  inst=01094020  aluout=00000258  memout=00000079
+                 460  pc=00000070  inst=20a5ffff  aluout=00000000  memout=00000079
+                 465  pc=00000070  inst=20a5ffff  aluout=00000000  memout=00000000
+                 480  pc=00000074  inst=14a0fffb  aluout=00000000  memout=00000000
+                 500  pc=00000078  inst=00081000  aluout=00000258  memout=00000000
+                 505  pc=00000078  inst=00081000  aluout=00000258  memout=00000079
+                 520  pc=0000007c  inst=03e00008  aluout=00000010  memout=00000079
+                 525  pc=0000007c  inst=03e00008  aluout=00000010  memout=00000000
+                 540  pc=00000010  inst=ac820000  aluout=00000060  memout=00000000
+                 560  pc=00000014  inst=8c890000  aluout=00000060  memout=00000000
+                 565  pc=00000014  inst=8c890000  aluout=00000060  memout=00000258
+                 580  pc=00000018  inst=01244022  aluout=000002b8  memout=00000258
+                 585  pc=00000018  inst=01244022  aluout=000002b8  memout=00000000
+                 600  pc=0000001c  inst=20050003  aluout=00000003  memout=00000000
+                 620  pc=00000020  inst=20a5ffff  aluout=00000002  memout=00000000
+                 640  pc=00000024  inst=34a8ffff  aluout=0000ffff  memout=00000000
+                 660  pc=00000028  inst=39085555  aluout=0000aaaa  memout=00000000
+                 680  pc=0000002c  inst=2009ffff  aluout=ffffffff  memout=00000000
+                 700  pc=00000030  inst=312affff  aluout=0000ffff  memout=00000000
+                 720  pc=00000034  inst=01493025  aluout=ffffffff  memout=00000000
+                 740  pc=00000038  inst=01494026  aluout=ffff0000  memout=00000000
+                 760  pc=0000003c  inst=01463824  aluout=0000ffff  memout=00000000
+                 780  pc=00000040  inst=10a00001  aluout=00000002  memout=00000000
+                 800  pc=00000044  inst=08000008  aluout=00000000  memout=00000000
+                 820  pc=00000020  inst=20a5ffff  aluout=00000001  memout=00000000
+                 840  pc=00000024  inst=34a8ffff  aluout=0000ffff  memout=00000000
+                 860  pc=00000028  inst=39085555  aluout=0000aaaa  memout=00000000
+                 880  pc=0000002c  inst=2009ffff  aluout=ffffffff  memout=00000000
+                 900  pc=00000030  inst=312affff  aluout=0000ffff  memout=00000000
+                 920  pc=00000034  inst=01493025  aluout=ffffffff  memout=00000000
+                 940  pc=00000038  inst=01494026  aluout=ffff0000  memout=00000000
+                 960  pc=0000003c  inst=01463824  aluout=0000ffff  memout=00000000
+                 980  pc=00000040  inst=10a00001  aluout=00000001  memout=00000000
+                1000  pc=00000044  inst=08000008  aluout=00000000  memout=00000000
+                1020  pc=00000020  inst=20a5ffff  aluout=00000000  memout=00000000
+                1040  pc=00000024  inst=34a8ffff  aluout=0000ffff  memout=00000000
+                1060  pc=00000028  inst=39085555  aluout=0000aaaa  memout=00000000
+                1080  pc=0000002c  inst=2009ffff  aluout=ffffffff  memout=00000000
+                1100  pc=00000030  inst=312affff  aluout=0000ffff  memout=00000000
+                1120  pc=00000034  inst=01493025  aluout=ffffffff  memout=00000000
+                1140  pc=00000038  inst=01494026  aluout=ffff0000  memout=00000000
+                1160  pc=0000003c  inst=01463824  aluout=0000ffff  memout=00000000
+                1180  pc=00000040  inst=10a00001  aluout=00000000  memout=00000000
+                1200  pc=00000048  inst=2005ffff  aluout=ffffffff  memout=00000000
+                1220  pc=0000004c  inst=000543c0  aluout=ffff8000  memout=00000000
+                1240  pc=00000050  inst=00084400  aluout=80000000  memout=00000000
+                1260  pc=00000054  inst=00084403  aluout=ffff8000  memout=00000000
+                1280  pc=00000058  inst=000843c2  aluout=0001ffff  memout=00000000
+                1300  pc=0000005c  inst=08000017  aluout=00000000  memout=00000000

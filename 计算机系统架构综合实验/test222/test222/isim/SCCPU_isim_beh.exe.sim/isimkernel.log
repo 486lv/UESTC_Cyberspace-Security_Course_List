@@ -1,0 +1,28 @@
+Command line:
+   SCCPU_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64918
+
+Wed May 28 15:09:14 2025
+
+
+ Elaboration Time: 0.109201 sec
+
+ Current Memory Usage: 1171.57 Meg
+
+ Total Signals          : 163
+ Total Nets             : 2813
+ Total Signal Drivers   : 123
+ Total Blocks           : 19
+ Total Primitive Blocks : 14
+ Total Processes        : 134
+ Total Traceable Variables  : 30
+ Total Scalar Nets and Variables : 5143
+
+ Total Simulation Time: 0.187201 sec
+
+ Current Memory Usage: 1171.57 Meg
+
+Wed May 28 15:09:31 2025
+

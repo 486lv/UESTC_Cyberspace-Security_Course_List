@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/ck2/test222/ly1/CPU_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CPU_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/CPU_TB/PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/Inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/Alu_Result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Alu_Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Alu_Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/Clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/Resetn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Resetn</obj_property>
+      <obj_property name="ObjectShortName">Resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[2]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[2,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[2,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[3]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[3,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[3,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[4]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[4,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[4,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[5]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[5,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[5,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[6]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[6,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[6,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[7]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[7,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[7,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[8]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[8,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[8,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[9]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[9,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[9,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[10]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[10,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[10,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_TB/uut/stage2/rf/register[12]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[12,31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[12,31:0]</obj_property>
+   </wvobject>
+</wave_config>

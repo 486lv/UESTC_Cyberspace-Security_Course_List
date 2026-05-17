@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="test111.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sscpu_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="sscpu_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="sscpu_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sscpu_test_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1747895951" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1747895951">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1747896692" xil_pn:in_ck="-8302392701462372504" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1747896692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="../SCCPU/Control_Unit.v"/>
+      <outfile xil_pn:name="../SCCPU/EXE_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/ID_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/IF_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/Inst_ROM.v"/>
+      <outfile xil_pn:name="../SCCPU/MEM_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/Regfile.v"/>
+      <outfile xil_pn:name="../SCCPU/SCCPU.v"/>
+      <outfile xil_pn:name="../SCCPU/WB_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/add32.v"/>
+      <outfile xil_pn:name="../SCCPU/alu.v"/>
+      <outfile xil_pn:name="../SCCPU/dff32.v"/>
+      <outfile xil_pn:name="../SCCPU/mux32_2_1.v"/>
+      <outfile xil_pn:name="../SCCPU/mux32_4_1.v"/>
+      <outfile xil_pn:name="../SCCPU/mux5_2_1.v"/>
+      <outfile xil_pn:name="sscpu_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1747895955" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4193006281859284580" xil_pn:start_ts="1747895955">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1747895955" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-967728595474547070" xil_pn:start_ts="1747895955">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1747895955" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8361396868451423109" xil_pn:start_ts="1747895955">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1747896694" xil_pn:in_ck="-8302392701462372504" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1747896694">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="../SCCPU/Control_Unit.v"/>
+      <outfile xil_pn:name="../SCCPU/EXE_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/ID_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/IF_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/Inst_ROM.v"/>
+      <outfile xil_pn:name="../SCCPU/MEM_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/Regfile.v"/>
+      <outfile xil_pn:name="../SCCPU/SCCPU.v"/>
+      <outfile xil_pn:name="../SCCPU/WB_STAGE.v"/>
+      <outfile xil_pn:name="../SCCPU/add32.v"/>
+      <outfile xil_pn:name="../SCCPU/alu.v"/>
+      <outfile xil_pn:name="../SCCPU/dff32.v"/>
+      <outfile xil_pn:name="../SCCPU/mux32_2_1.v"/>
+      <outfile xil_pn:name="../SCCPU/mux32_4_1.v"/>
+      <outfile xil_pn:name="../SCCPU/mux5_2_1.v"/>
+      <outfile xil_pn:name="sscpu_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1747896696" xil_pn:in_ck="-8302392701462372504" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1065113369152569545" xil_pn:start_ts="1747896694">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="sscpu_test_beh.prj"/>
+      <outfile xil_pn:name="sscpu_test_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1747896696" xil_pn:in_ck="4024301182731371580" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4701401319912639770" xil_pn:start_ts="1747896696">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="sscpu_test_isim_beh.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

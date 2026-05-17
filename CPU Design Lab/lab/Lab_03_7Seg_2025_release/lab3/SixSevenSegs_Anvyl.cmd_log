@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/lab3/SixSevenSegs_Anvyl.xst" -ofn "D:/lab3/SixSevenSegs_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg484-3 SixSevenSegs_Anvyl.ngc SixSevenSegs_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SixSevenSegs_Anvyl_map.ncd SixSevenSegs_Anvyl.ngd SixSevenSegs_Anvyl.pcf 
+par -w -intstyle ise -ol high -mt off SixSevenSegs_Anvyl_map.ncd SixSevenSegs_Anvyl.ncd SixSevenSegs_Anvyl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SixSevenSegs_Anvyl.twx SixSevenSegs_Anvyl.ncd -o SixSevenSegs_Anvyl.twr SixSevenSegs_Anvyl.pcf 
+bitgen -intstyle ise -f SixSevenSegs_Anvyl.ut SixSevenSegs_Anvyl.ncd 

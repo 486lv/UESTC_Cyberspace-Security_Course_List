@@ -1,0 +1,133 @@
+ISim log file
+Running: D:\2024-2025-2\Computer_System_Design_and_Implementation\Labs\Lab_09_PipelineItnterrupt_2025\pipelined_int_cpu_2025\pipelined_cpu_exc_int_tb_fig_8_33_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/2024-2025-2/Computer_System_Design_and_Implementation/Labs/Lab_09_PipelineItnterrupt_2025/pipelined_int_cpu_2025/pipelined_cpu_exc_int_tb_fig_8_33_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 300 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                   0  pc=00000000  inst=00000000  ealu=00000000
+                   4  pc=00000004  inst=0800001d  ealu=00000000
+                   8  pc=00000074  inst=00000000  ealu=00000000
+                  12  pc=00000078  inst=2008000f  ealu=00000000
+                  16  pc=0000007c  inst=40886000  ealu=0000000f
+                  20  pc=00000080  inst=8c080048  ealu=0000000f
+                  24  pc=00000084  inst=8c09004c  ealu=00000048
+                  28  pc=00000088  inst=01094020  ealu=0000004c
+                  32  pc=00000088  inst=01094020  ealu=00000002
+                  36  pc=0000008c  inst=00000000  ealu=80000001
+                  40  pc=00000008  inst=0000000c  ealu=00000000
+                  44  pc=0000000c  inst=401a6800  ealu=00000000
+                  48  pc=00000010  inst=335b000c  ealu=0000000c
+                  52  pc=00000014  inst=8f7b0020  ealu=0000000c
+                  56  pc=00000018  inst=00000000  ealu=0000002c
+                  60  pc=0000001c  inst=03600008  ealu=00000000
+                  64  pc=00000068  inst=00000000  ealu=00000068
+                  68  pc=0000006c  inst=00000000  ealu=00000000
+                  72  pc=00000070  inst=08000010  ealu=00000000
+                  76  pc=00000040  inst=00000000  ealu=00000000
+                  80  pc=00000044  inst=401a7000  ealu=00000000
+                  84  pc=00000048  inst=235a0004  ealu=00000084
+                  88  pc=0000004c  inst=409a7000  ealu=00000088
+                  92  pc=00000050  inst=42000018  ealu=00000088
+                  96  pc=00000088  inst=00000000  ealu=00000000
+                 100  pc=0000008c  inst=00000000  ealu=00000000
+                 104  pc=00000090  inst=0000000c  ealu=00000000
+                 108  pc=00000008  inst=00000000  ealu=00000000
+                 112  pc=0000000c  inst=401a6800  ealu=00000000
+                 116  pc=00000010  inst=335b000c  ealu=00000004
+                 120  pc=00000014  inst=8f7b0020  ealu=00000004
+                 124  pc=00000018  inst=00000000  ealu=00000024
+                 128  pc=0000001c  inst=03600008  ealu=00000000
+                 132  pc=0000003c  inst=00000000  ealu=0000003c
+                 136  pc=00000040  inst=00000000  ealu=00000000
+                 140  pc=00000044  inst=401a7000  ealu=00000000
+                 144  pc=00000048  inst=235a0004  ealu=0000008c
+                 148  pc=0000004c  inst=409a7000  ealu=00000090
+                 152  pc=00000050  inst=42000018  ealu=00000090
+                 156  pc=00000090  inst=00000000  ealu=00000000
+                 160  pc=00000094  inst=00000000  ealu=00000000
+                 164  pc=00000098  inst=0128001a  ealu=00000000
+                 168  pc=00000008  inst=00000000  ealu=80000001
+                 172  pc=0000000c  inst=401a6800  ealu=00000000
+                 176  pc=00000010  inst=335b000c  ealu=00000008
+                 180  pc=00000014  inst=8f7b0020  ealu=00000008
+                 184  pc=00000018  inst=00000000  ealu=00000028
+                 188  pc=0000001c  inst=03600008  ealu=00000000
+                 192  pc=00000054  inst=00000000  ealu=00000054
+                 196  pc=00000058  inst=00000000  ealu=00000000
+                 200  pc=0000005c  inst=08000010  ealu=00000000
+                 204  pc=00000040  inst=00000000  ealu=00000000
+                 208  pc=00000044  inst=401a7000  ealu=00000000
+                 212  pc=00000048  inst=235a0004  ealu=00000094
+                 216  pc=0000004c  inst=409a7000  ealu=00000098
+                 220  pc=00000050  inst=42000018  ealu=00000098
+                 224  pc=00000098  inst=00000000  ealu=00000000
+                 228  pc=0000009c  inst=00000000  ealu=00000000
+                 232  pc=000000a0  inst=34040050  ealu=00000000
+                 236  pc=000000a4  inst=20050004  ealu=00000050
+                 240  pc=00000008  inst=00004020  ealu=00000004
+                 244  pc=0000000c  inst=401a6800  ealu=00000000
+                 248  pc=00000010  inst=335b000c  ealu=00000000
+                 252  pc=00000014  inst=8f7b0020  ealu=00000000
+                 256  pc=00000018  inst=00000000  ealu=00000020
+                 260  pc=0000001c  inst=03600008  ealu=00000000
+                 264  pc=00000030  inst=00000000  ealu=00000030
+                 268  pc=00000034  inst=00000000  ealu=00000000
+                 272  pc=00000038  inst=42000018  ealu=00000000
+                 276  pc=000000a4  inst=00000000  ealu=00000000
+                 280  pc=000000a8  inst=00004020  ealu=00000000
+                 284  pc=000000ac  inst=8c890000  ealu=00000000
+                 288  pc=000000b0  inst=20840004  ealu=00000050
+                 292  pc=000000b4  inst=01094020  ealu=00000054
+                 296  pc=000000b8  inst=20a5ffff  ealu=000000a3
+                 300  pc=000000bc  inst=14a0fffb  ealu=00000003
+                 304  pc=000000a8  inst=00000000  ealu=00000003
+                 308  pc=000000ac  inst=8c890000  ealu=00000000
+                 312  pc=000000b0  inst=20840004  ealu=00000054
+                 316  pc=000000b4  inst=01094020  ealu=00000058
+                 320  pc=000000b8  inst=20a5ffff  ealu=000000ca
+                 324  pc=000000bc  inst=14a0fffb  ealu=00000002
+                 328  pc=00000008  inst=00000000  ealu=00000002
+                 332  pc=0000000c  inst=401a6800  ealu=00000000
+                 336  pc=00000010  inst=335b000c  ealu=00000000
+                 340  pc=00000014  inst=8f7b0020  ealu=00000000
+                 344  pc=00000018  inst=00000000  ealu=00000020
+                 348  pc=0000001c  inst=03600008  ealu=00000000
+                 352  pc=00000030  inst=00000000  ealu=00000030
+                 356  pc=00000034  inst=00000000  ealu=00000000
+                 360  pc=00000038  inst=42000018  ealu=00000000
+                 364  pc=000000b8  inst=00000000  ealu=00000000
+                 368  pc=000000bc  inst=14a0fffb  ealu=00000000
+                 372  pc=000000a8  inst=00000000  ealu=00000002
+                 376  pc=00000008  inst=8c890000  ealu=00000000
+                 380  pc=0000000c  inst=401a6800  ealu=00000058
+                 384  pc=00000010  inst=335b000c  ealu=80000000
+                 388  pc=00000014  inst=8f7b0020  ealu=00000000
+                 392  pc=00000018  inst=00000000  ealu=00000020
+                 396  pc=0000001c  inst=03600008  ealu=00000000
+                 400  pc=00000030  inst=00000000  ealu=00000030
+                 404  pc=00000034  inst=00000000  ealu=00000000
+                 408  pc=00000038  inst=42000018  ealu=00000000
+                 412  pc=000000a8  inst=00000000  ealu=00000000
+                 416  pc=000000ac  inst=8c890000  ealu=00000000
+                 420  pc=000000b0  inst=20840004  ealu=00000058
+                 424  pc=000000b4  inst=01094020  ealu=0000005c
+                 428  pc=000000b8  inst=20a5ffff  ealu=00000143
+                 432  pc=000000bc  inst=14a0fffb  ealu=00000001
+                 436  pc=000000a8  inst=00000000  ealu=00000001
+                 440  pc=000000ac  inst=8c890000  ealu=00000000
+                 444  pc=000000b0  inst=20840004  ealu=0000005c
+                 448  pc=000000b4  inst=01094020  ealu=00000060
+                 452  pc=000000b8  inst=20a5ffff  ealu=00000258
+                 456  pc=000000bc  inst=14a0fffb  ealu=00000000
+                 460  pc=000000c0  inst=00000000  ealu=00000000
+                 464  pc=000000c4  inst=08000030  ealu=00000000
+                 468  pc=000000c0  inst=08000030  ealu=00000000
