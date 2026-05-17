@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/lab5/alu_tb_fig4_7_isim_beh.exe -prj D:/lab5/alu_tb_fig4_7_beh.prj work.alu_tb_fig4_7 work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/lab5/shift.v" into library work
+Analyzing Verilog file "D:/lab5/mux4x32.v" into library work
+Analyzing Verilog file "D:/lab5/addsub32.v" into library work
+Analyzing Verilog file "D:/lab5/alu.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu_tb_fig4_7.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module addsub32
+Compiling module shift
+Compiling module mux4x32
+Compiling module alu
+Compiling module alu_tb_fig4_7
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable D:/lab5/alu_tb_fig4_7_isim_beh.exe
+Fuse Memory Usage: 28680 KB
+Fuse CPU Usage: 249 ms

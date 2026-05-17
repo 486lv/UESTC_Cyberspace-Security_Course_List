@@ -1,0 +1,28 @@
+Command line:
+   sccomp_dataflow_tb_fig5_22_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62762
+
+Fri Jan 01 00:50:20 2016
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 1165.3 Meg
+
+ Total Signals          : 191
+ Total Nets             : 2107
+ Total Signal Drivers   : 91
+ Total Blocks           : 21
+ Total Primitive Blocks : 15
+ Total Processes        : 104
+ Total Traceable Variables  : 47
+ Total Scalar Nets and Variables : 5909
+
+ Total Simulation Time: 0.1092 sec
+
+ Current Memory Usage: 1165.3 Meg
+
+Fri Jan 01 00:50:41 2016
+

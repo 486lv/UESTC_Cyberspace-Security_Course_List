@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22_isim_beh.exe" -prj "F:/lab/lab/Lab_06_SCCPU_2025_release/Lab_06_SC_2025_Start/sccomp_dataflow_tb_fig5_22_beh.prj" "work.sccomp_dataflow_tb_fig5_22" "work.glbl" 

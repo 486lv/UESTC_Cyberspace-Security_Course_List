@@ -1,0 +1,5 @@
+verilog isim_temp "SevenSegs.v"
+verilog isim_temp "SevenSegsController.v"
+verilog isim_temp "ClockDivider.v"
+verilog isim_temp "SixSevenSegs_Anvy1.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrains.ucf -bm ClockDivider.bmm -p xc6slx45-csg484-3 Keypad_Anvyl.ngc Keypad_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Keypad_Anvyl_map.ncd Keypad_Anvyl.ngd Keypad_Anvyl.pcf 
+par -w -intstyle ise -ol high -mt off Keypad_Anvyl_map.ncd Keypad_Anvyl.ncd Keypad_Anvyl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Keypad_Anvyl.twx Keypad_Anvyl.ncd -o Keypad_Anvyl.twr Keypad_Anvyl.pcf -ucf constrains.ucf 
+bitgen -intstyle ise -f Keypad_Anvyl.ut Keypad_Anvyl.ncd 
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrains.ucf -p xc6slx45-csg484-3 Keypad_Anvyl.ngc Keypad_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Keypad_Anvyl_map.ncd Keypad_Anvyl.ngd Keypad_Anvyl.pcf 
+par -w -intstyle ise -ol high -mt off Keypad_Anvyl_map.ncd Keypad_Anvyl.ncd Keypad_Anvyl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Keypad_Anvyl.twx Keypad_Anvyl.ncd -o Keypad_Anvyl.twr Keypad_Anvyl.pcf -ucf constrains.ucf 
+bitgen -intstyle ise -f Keypad_Anvyl.ut Keypad_Anvyl.ncd 
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrains.ucf -p xc6slx45-csg484-3 Keypad_Anvyl.ngc Keypad_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Keypad_Anvyl_map.ncd Keypad_Anvyl.ngd Keypad_Anvyl.pcf 
+par -w -intstyle ise -ol high -mt off Keypad_Anvyl_map.ncd Keypad_Anvyl.ncd Keypad_Anvyl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Keypad_Anvyl.twx Keypad_Anvyl.ncd -o Keypad_Anvyl.twr Keypad_Anvyl.pcf -ucf constrains.ucf 
+bitgen -intstyle ise -f Keypad_Anvyl.ut Keypad_Anvyl.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Keypad_Anvyl.ngc Keypad_Anvyl_synthesis.v 
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+xst -intstyle ise -ifn "D:/lab4/Keypad_Anvyl.xst" -ofn "D:/lab4/Keypad_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrains.ucf -p xc6slx45-csg484-3 Keypad_Anvyl.ngc Keypad_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Keypad_Anvyl_map.ncd Keypad_Anvyl.ngd Keypad_Anvyl.pcf 
+par -w -intstyle ise -ol high -mt off Keypad_Anvyl_map.ncd Keypad_Anvyl.ncd Keypad_Anvyl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Keypad_Anvyl.twx Keypad_Anvyl.ncd -o Keypad_Anvyl.twr Keypad_Anvyl.pcf -ucf constrains.ucf 
+bitgen -intstyle ise -f Keypad_Anvyl.ut Keypad_Anvyl.ncd 

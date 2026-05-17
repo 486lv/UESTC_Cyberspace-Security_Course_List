@@ -1,0 +1,4 @@
+verilog work "SevenSegs.v"
+verilog work "SevenSegsController.v"
+verilog work "ClockDivider.v"
+verilog work "SixSevenSegs_Anvy1.v"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\2014\mips\LiYaMin\Chap05_SinglePeriodCPU\sccomp_dataflow.ncd
+OUTFILE=Z:\2014\mips\LiYaMin\Chap05_SinglePeriodCPU\sccomp_dataflow.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=Z:\2014\mips\LiYaMin\Chap05_SinglePeriodCPU
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\lab5\alu.ncd
+OUTFILE=D:\lab5\alu.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=D:\lab5
+LICENSE=WebPack
+USER_INFO=__0_0_0

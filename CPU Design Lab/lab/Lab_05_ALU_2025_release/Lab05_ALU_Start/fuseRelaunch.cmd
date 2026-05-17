@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/2023-2024-2/Computer_System_Design_and_Implementation/LiYaMin/Chap04_ALU_2024_0312/alu_tb_fig4_7_isim_beh.exe" -prj "D:/2023-2024-2/Computer_System_Design_and_Implementation/LiYaMin/Chap04_ALU_2024_0312/alu_tb_fig4_7_beh.prj" "work.alu_tb_fig4_7" "work.glbl" 

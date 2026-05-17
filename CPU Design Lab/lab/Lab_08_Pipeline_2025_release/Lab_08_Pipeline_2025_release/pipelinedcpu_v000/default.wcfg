@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/2014/mips/LiYaMin/Chap08_PipelinedCPU/pipelinedcpu/pipelinedcpu_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="pipelinedcpu_tb_fig8_18" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/resetn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/mem_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_clk</obj_property>
+      <obj_property name="ObjectShortName">mem_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/ealu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ealu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ealu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/malu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">malu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">malu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinedcpu_tb_fig8_18/walu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">walu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">walu[31:0]</obj_property>
+   </wvobject>
+</wave_config>

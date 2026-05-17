@@ -1,0 +1,26 @@
+ISim log file
+Running: D:\lab5\alu_tb_fig4_7_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/lab5/alu_tb_fig4_7_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                   0 aluc=0  a=00000001   b=00000002  r=00000003   z=0
+                  10 aluc=4  a=00000001   b=00000002  r=ffffffff   z=0
+                  20 aluc=1  a=cccccccc   b=aaaaaaaa  r=88888888   z=0
+                  30 aluc=5  a=cccccccc   b=aaaaaaaa  r=eeeeeeee   z=0
+                  40 aluc=2  a=33333333   b=ff005555  r=cc336666   z=0
+                  50 aluc=6  a=33333333   b=ff005555  r=55550000   z=0
+                  60 aluc=3  a=0000000f   b=ffffffff  r=ffff8000   z=0
+                  70 aluc=7  a=0000000f   b=ffffffff  r=0001ffff   z=0
+                  80 aluc=f  a=00000010   b=7f000000  r=00007f00   z=0
+                  90 aluc=f  a=00000010   b=ff000000  r=ffffff00   z=0
+Stopped at time : 100 ns : File "C:/Users/Lenovo/Desktop/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu_tb_fig4_7.v" Line 75

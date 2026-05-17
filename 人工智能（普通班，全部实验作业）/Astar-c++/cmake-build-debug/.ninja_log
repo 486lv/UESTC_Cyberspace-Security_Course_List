@@ -1,0 +1,26 @@
+# ninja log v5
+7	1595	7676233738129568	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+1597	2070	7676233742840416	untitled5.exe	af993db21c6db3ce
+19	2330	7671254877564810	CMakeFiles/untitled5.dir/receiver_win.cpp.obj	8c791871ab795460
+31	2339	7671254877630993	CMakeFiles/untitled5.dir/sender_win.cpp.obj	7bf3ad3c42fae685
+1	246	7676275573993407	build.ninja	93986165e5edf52
+8	1839	7676287452957432	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+1841	2432	7676287458864397	untitled5.exe	af993db21c6db3ce
+5	1650	7676288057119950	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+1651	2183	7676288062432664	untitled5.exe	af993db21c6db3ce
+7	1857	7676292058554013	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+1858	2456	7676292064537990	untitled5.exe	af993db21c6db3ce
+16	2083	7676296810134849	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+2086	2744	7676296816694740	untitled5.exe	af993db21c6db3ce
+6	1841	7676301975921032	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+1842	2466	7676301982185239	untitled5.exe	af993db21c6db3ce
+12	4730	7682329494102418	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+4733	7547	7682329522232299	untitled5.exe	af993db21c6db3ce
+8	3122	7682330379630847	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+3125	4072	7682330389138250	untitled5.exe	af993db21c6db3ce
+6	2020	7682414670926719	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+2022	2650	7682414677223807	untitled5.exe	af993db21c6db3ce
+7	2446	7682415125857315	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+2448	3203	7682415133404685	untitled5.exe	af993db21c6db3ce
+8	5097	7703650935336237	CMakeFiles/untitled5.dir/main.cpp.obj	a036b8c43920edbd
+5099	7717	7703650961515716	untitled5.exe	af993db21c6db3ce

@@ -1,0 +1,173 @@
+digraph {
+	fontname=SimHei
+	root_1 [label=C fontname=SimHei]
+	root -> root_1 [label=1.2]
+	root_1_2 [label=1 fontname=SimHei]
+	root_1 -> root_1_2
+	root_3 [label=C fontname=SimHei]
+	root -> root_3 [label=1.3]
+	root_3_4 [label=1 fontname=SimHei]
+	root_3 -> root_3_4
+	root_5 [label=C fontname=SimHei]
+	root -> root_5 [label=1.4]
+	root_5_6 [label=1 fontname=SimHei]
+	root_5 -> root_5_6
+	root_7 [label=C fontname=SimHei]
+	root -> root_7 [label=1.5]
+	root_7_8 [label=1 fontname=SimHei]
+	root_7 -> root_7_8
+	root_9 [label=C fontname=SimHei]
+	root -> root_9 [label=1.6]
+	root_9_10 [label=1 fontname=SimHei]
+	root_9 -> root_9_10
+	root_11 [label=C fontname=SimHei]
+	root -> root_11 [label=1.9]
+	root_11_12 [label=1 fontname=SimHei]
+	root_11 -> root_11_12
+	root_13 [label=C fontname=SimHei]
+	root -> root_13 [label=3]
+	root_13_14 [label=2 fontname=SimHei]
+	root_13 -> root_13_14
+	root_15 [label=C fontname=SimHei]
+	root -> root_15 [label=3.3]
+	root_15_16 [label=2 fontname=SimHei]
+	root_15 -> root_15_16
+	root_17 [label=C fontname=SimHei]
+	root -> root_17 [label=3.5]
+	root_17_18 [label=2 fontname=SimHei]
+	root_17 -> root_17_18
+	root_19 [label=C fontname=SimHei]
+	root -> root_19 [label=3.7]
+	root_19_20 [label=2 fontname=SimHei]
+	root_19 -> root_19_20
+	root_21 [label=C fontname=SimHei]
+	root -> root_21 [label=3.8]
+	root_21_22 [label=2 fontname=SimHei]
+	root_21 -> root_21_22
+	root_23 [label=C fontname=SimHei]
+	root -> root_23 [label=3.9]
+	root_23_24 [label=2 fontname=SimHei]
+	root_23 -> root_23_24
+	root_25 [label=C fontname=SimHei]
+	root -> root_25 [label=4]
+	root_25_26 [label=2 fontname=SimHei]
+	root_25 -> root_25_26
+	root_27 [label=C fontname=SimHei]
+	root -> root_27 [label=4.1]
+	root_27_28 [label=2 fontname=SimHei]
+	root_27 -> root_27_28
+	root_29 [label=C fontname=SimHei]
+	root -> root_29 [label=4.2]
+	root_29_30 [label=2 fontname=SimHei]
+	root_29 -> root_29_30
+	root_31 [label=C fontname=SimHei]
+	root -> root_31 [label=4.3]
+	root_31_32 [label=2 fontname=SimHei]
+	root_31 -> root_31_32
+	root_33 [label=C fontname=SimHei]
+	root -> root_33 [label=4.4]
+	root_33_34 [label=2 fontname=SimHei]
+	root_33 -> root_33_34
+	root_35 [label=C fontname=SimHei]
+	root -> root_35 [label=4.5]
+	root_35_36 [label=2 fontname=SimHei]
+	root_35 -> root_35_36
+	root_37 [label=C fontname=SimHei]
+	root -> root_37 [label=4.6]
+	root_37_38 [label=2 fontname=SimHei]
+	root_37 -> root_37_38
+	root_39 [label=C fontname=SimHei]
+	root -> root_39 [label=4.7]
+	root_39_40 [label=2 fontname=SimHei]
+	root_39 -> root_39_40
+	root_41 [label=C fontname=SimHei]
+	root -> root_41 [label=4.8]
+	root_41_42 [label=A fontname=SimHei]
+	root_41 -> root_41_42 [label=6]
+	root_41_42_43 [label=3 fontname=SimHei]
+	root_41_42 -> root_41_42_43
+	root_41_44 [label=A fontname=SimHei]
+	root_41 -> root_41_44 [label=6.2]
+	root_41_44_45 [label=3 fontname=SimHei]
+	root_41_44 -> root_41_44_45
+	root_41_46 [label=A fontname=SimHei]
+	root_41 -> root_41_46 [label=6.8]
+	root_41_46_47 [label=2 fontname=SimHei]
+	root_41_46 -> root_41_46_47
+	root_48 [label=C fontname=SimHei]
+	root -> root_48 [label=4.9]
+	root_48_49 [label=3 fontname=SimHei]
+	root_48 -> root_48_49
+	root_50 [label=C fontname=SimHei]
+	root -> root_50 [label=5]
+	root_50_51 [label=A fontname=SimHei]
+	root_50 -> root_50_51 [label=6.3]
+	root_50_51_52 [label=3 fontname=SimHei]
+	root_50_51 -> root_50_51_52
+	root_50_53 [label=A fontname=SimHei]
+	root_50 -> root_50_53 [label=6.7]
+	root_50_53_54 [label=2 fontname=SimHei]
+	root_50_53 -> root_50_53_54
+	root_55 [label=C fontname=SimHei]
+	root -> root_55 [label=5.1]
+	root_55_56 [label=A fontname=SimHei]
+	root_55 -> root_55_56 [label=5.8]
+	root_55_56_57 [label=3 fontname=SimHei]
+	root_55_56 -> root_55_56_57
+	root_55_58 [label=A fontname=SimHei]
+	root_55 -> root_55_58 [label=5.9]
+	root_55_58_59 [label=3 fontname=SimHei]
+	root_55_58 -> root_55_58_59
+	root_55_60 [label=A fontname=SimHei]
+	root_55 -> root_55_60 [label=6]
+	root_55_60_61 [label=2 fontname=SimHei]
+	root_55_60 -> root_55_60_61
+	root_55_62 [label=A fontname=SimHei]
+	root_55 -> root_55_62 [label=6.3]
+	root_55_62_63 [label=3 fontname=SimHei]
+	root_55_62 -> root_55_62_63
+	root_55_64 [label=A fontname=SimHei]
+	root_55 -> root_55_64 [label=6.9]
+	root_55_64_65 [label=3 fontname=SimHei]
+	root_55_64 -> root_55_64_65
+	root_66 [label=C fontname=SimHei]
+	root -> root_66 [label=5.2]
+	root_66_67 [label=3 fontname=SimHei]
+	root_66 -> root_66_67
+	root_68 [label=C fontname=SimHei]
+	root -> root_68 [label=5.4]
+	root_68_69 [label=3 fontname=SimHei]
+	root_68 -> root_68_69
+	root_70 [label=C fontname=SimHei]
+	root -> root_70 [label=5.5]
+	root_70_71 [label=3 fontname=SimHei]
+	root_70 -> root_70_71
+	root_72 [label=C fontname=SimHei]
+	root -> root_72 [label=5.6]
+	root_72_73 [label=3 fontname=SimHei]
+	root_72 -> root_72_73
+	root_74 [label=C fontname=SimHei]
+	root -> root_74 [label=5.7]
+	root_74_75 [label=3 fontname=SimHei]
+	root_74 -> root_74_75
+	root_76 [label=C fontname=SimHei]
+	root -> root_76 [label=5.8]
+	root_76_77 [label=3 fontname=SimHei]
+	root_76 -> root_76_77
+	root_78 [label=C fontname=SimHei]
+	root -> root_78 [label=5.9]
+	root_78_79 [label=3 fontname=SimHei]
+	root_78 -> root_78_79
+	root_80 [label=C fontname=SimHei]
+	root -> root_80 [label=6]
+	root_80_81 [label=3 fontname=SimHei]
+	root_80 -> root_80_81
+	root_82 [label=C fontname=SimHei]
+	root -> root_82 [label=6.1]
+	root_82_83 [label=3 fontname=SimHei]
+	root_82 -> root_82_83
+	root_84 [label=C fontname=SimHei]
+	root -> root_84 [label=6.4]
+	root_84_85 [label=3 fontname=SimHei]
+	root_84 -> root_84_85
+}

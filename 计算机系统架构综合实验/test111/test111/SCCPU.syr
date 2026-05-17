@@ -1,0 +1,664 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: SCCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SCCPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SCCPU"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : SCCPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\test111\Regfile.v" into library work
+Parsing module <Regfile>.
+Analyzing Verilog file "D:\test111\mux5_2_1.v" into library work
+Parsing module <mux5_2_1>.
+Analyzing Verilog file "D:\test111\mux32_4_1.v" into library work
+Parsing module <mux32_4_1>.
+Analyzing Verilog file "D:\test111\mux32_2_1.v" into library work
+Parsing module <mux32_2_1>.
+Analyzing Verilog file "D:\test111\Inst_ROM.v" into library work
+Parsing module <Inst_ROM>.
+Analyzing Verilog file "D:\test111\dff32.v" into library work
+Parsing module <dff32>.
+Analyzing Verilog file "D:\test111\Control_Unit.v" into library work
+Parsing module <Control_Unit>.
+Analyzing Verilog file "D:\test111\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "D:\test111\add32.v" into library work
+Parsing module <add32>.
+Analyzing Verilog file "D:\test111\WB_STAGE.v" into library work
+Parsing module <WB_STAGE>.
+Analyzing Verilog file "D:\test111\MEM_STAGE.v" into library work
+Parsing module <MEM_STAGE>.
+Analyzing Verilog file "D:\test111\IF_STAGE.v" into library work
+Parsing module <IF_STAGE>.
+Analyzing Verilog file "D:\test111\ID_STAGE.v" into library work
+Parsing module <ID_STAGE>.
+Analyzing Verilog file "D:\test111\EXE_STAGE.v" into library work
+Parsing module <EXE_STAGE>.
+Analyzing Verilog file "D:\test111\SCCPU.v" into library work
+Parsing module <SCCPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <SCCPU>.
+WARNING:HDLCompiler:1016 - "D:\test111\IF_STAGE.v" Line 33: Port stall is not connected to this instance
+
+Elaborating module <IF_STAGE>.
+
+Elaborating module <dff32>.
+
+Elaborating module <add32>.
+
+Elaborating module <mux32_4_1>.
+
+Elaborating module <Inst_ROM>.
+WARNING:HDLCompiler:552 - "D:\test111\IF_STAGE.v" Line 33: Input port stall is not connected on this instance
+
+Elaborating module <ID_STAGE>.
+
+Elaborating module <Control_Unit>.
+
+Elaborating module <Regfile>.
+
+Elaborating module <mux5_2_1>.
+
+Elaborating module <EXE_STAGE>.
+
+Elaborating module <mux32_2_1>.
+
+Elaborating module <alu>.
+
+Elaborating module <MEM_STAGE>.
+
+Elaborating module <WB_STAGE>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SCCPU>.
+    Related source file is "D:\test111\SCCPU.v".
+    Summary:
+	no macro.
+Unit <SCCPU> synthesized.
+
+Synthesizing Unit <IF_STAGE>.
+    Related source file is "D:\test111\IF_STAGE.v".
+WARNING:Xst:2898 - Port 'stall', unconnected in block instance 'program_counter', is tied to GND.
+    Summary:
+	no macro.
+Unit <IF_STAGE> synthesized.
+
+Synthesizing Unit <dff32>.
+    Related source file is "D:\test111\dff32.v".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <dff32> synthesized.
+
+Synthesizing Unit <add32>.
+    Related source file is "D:\test111\add32.v".
+    Found 32-bit adder for signal <c> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add32> synthesized.
+
+Synthesizing Unit <mux32_4_1>.
+    Related source file is "D:\test111\mux32_4_1.v".
+    Found 32-bit 4-to-1 multiplexer for signal <y> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux32_4_1> synthesized.
+
+Synthesizing Unit <Inst_ROM>.
+    Related source file is "D:\test111\Inst_ROM.v".
+    Found 64x32-bit Read Only RAM for signal <inst>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Inst_ROM> synthesized.
+
+Synthesizing Unit <ID_STAGE>.
+    Related source file is "D:\test111\ID_STAGE.v".
+    Summary:
+	no macro.
+Unit <ID_STAGE> synthesized.
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "D:\test111\Control_Unit.v".
+    Summary:
+	no macro.
+Unit <Control_Unit> synthesized.
+
+Synthesizing Unit <Regfile>.
+    Related source file is "D:\test111\Regfile.v".
+    Found 992-bit register for signal <n0050[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <rna[4]_register[31][31]_wide_mux_1_OUT> created at line 28.
+    Found 32-bit 31-to-1 multiplexer for signal <rnb[4]_register[31][31]_wide_mux_4_OUT> created at line 29.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <Regfile> synthesized.
+
+Synthesizing Unit <mux5_2_1>.
+    Related source file is "D:\test111\mux5_2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux5_2_1> synthesized.
+
+Synthesizing Unit <EXE_STAGE>.
+    Related source file is "D:\test111\EXE_STAGE.v".
+    Summary:
+	no macro.
+Unit <EXE_STAGE> synthesized.
+
+Synthesizing Unit <mux32_2_1>.
+    Related source file is "D:\test111\mux32_2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux32_2_1> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "D:\test111\alu.v".
+    Found 32-bit subtractor for signal <alua[31]_alub[31]_sub_14_OUT> created at line 35.
+    Found 32-bit adder for signal <alua[31]_alub[31]_add_1_OUT> created at line 29.
+    Found 32-bit shifter logical right for signal <alub[31]_alua[31]_shift_right_9_OUT> created at line 33
+    Found 32-bit shifter logical left for signal <alub[31]_alua[31]_shift_left_11_OUT> created at line 34
+    Found 32-bit 7-to-1 multiplexer for signal <ealu> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <MEM_STAGE>.
+    Related source file is "D:\test111\MEM_STAGE.v".
+    Found 32x32-bit single-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <MEM_STAGE> synthesized.
+
+Synthesizing Unit <WB_STAGE>.
+    Related source file is "D:\test111\WB_STAGE.v".
+    Summary:
+	no macro.
+Unit <WB_STAGE> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit single-port RAM                             : 1
+ 64x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 2
+ 32-bit register                                       : 1
+ 992-bit register                                      : 1
+# Multiplexers                                         : 52
+ 32-bit 2-to-1 multiplexer                             : 48
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Inst_ROM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_inst> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <inst>          |          |
+    -----------------------------------------------------------------------
+Unit <Inst_ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MEM_STAGE>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <datain>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MEM_STAGE> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit single-port distributed RAM                 : 1
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Multiplexers                                         : 52
+ 32-bit 2-to-1 multiplexer                             : 48
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SCCPU> ...
+
+Optimizing unit <dff32> ...
+
+Optimizing unit <Regfile> ...
+
+Optimizing unit <alu> ...
+WARNING:Xst:1710 - FF/Latch <stage1/program_counter/q_1> (without init value) has a constant value of 0 in block <SCCPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <stage1/program_counter/q_0> (without init value) has a constant value of 0 in block <SCCPU>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SCCPU, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1022
+ Flip-Flops                                            : 1022
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SCCPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2469
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 29
+#      LUT2                        : 32
+#      LUT3                        : 13
+#      LUT4                        : 63
+#      LUT5                        : 1230
+#      LUT6                        : 903
+#      MUXCY                       : 89
+#      MUXF7                       : 14
+#      VCC                         : 1
+#      XORCY                       : 92
+# FlipFlops/Latches                : 1022
+#      FDC                         : 30
+#      FDCE                        : 987
+#      FDPE                        : 5
+# RAMS                             : 32
+#      RAM32X1S                    : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 97
+#      IBUF                        : 1
+#      OBUF                        : 96
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1022  out of  126800     0%  
+ Number of Slice LUTs:                 2304  out of  63400     3%  
+    Number used as Logic:              2272  out of  63400     3%  
+    Number used as Memory:               32  out of  19000     0%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2304
+   Number with an unused Flip Flop:    1282  out of   2304    55%  
+   Number with an unused LUT:             0  out of   2304     0%  
+   Number of fully used LUT-FF pairs:  1022  out of   2304    44%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          98
+ Number of bonded IOBs:                  98  out of    210    46%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 1054  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.866ns (Maximum Frequency: 112.793MHz)
+   Minimum input arrival time before clock: 1.216ns
+   Maximum output required time after clock: 7.436ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 8.866ns (frequency: 112.793MHz)
+  Total number of paths / destination ports: 2783350706 / 2238
+-------------------------------------------------------------------------
+Delay:               8.866ns (Levels of Logic = 26)
+  Source:            stage1/program_counter/q_7 (FF)
+  Destination:       stage1/program_counter/q_31 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: stage1/program_counter/q_7 to stage1/program_counter/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             27   0.361   0.799  stage1/program_counter/q_7 (stage1/program_counter/q_7)
+     LUT6:I0->O           17   0.097   0.630  stage1/inst_mem/Mram_inst271 (Inst_27_OBUF)
+     LUT4:I0->O            3   0.097   0.305  stage2/cu/out1611 (stage2/cu/out161)
+     LUT4:I3->O           59   0.097   0.622  stage2/cu/shift1 (shift)
+     LUT5:I2->O            2   0.097   0.697  stage3/alu_ina/Mmux_y241 (stage3/alua<30>)
+     LUT6:I0->O            3   0.097   0.566  stage3/al_unit/Mmux_ealu6_A27111 (stage3/al_unit/Mmux_ealu6_A27111)
+     LUT6:I2->O           22   0.097   0.390  stage3/al_unit/Mmux_ealu6_A2721 (stage3/al_unit/Mmux_ealu6_A272)
+     LUT6:I5->O            1   0.097   0.511  stage3/al_unit/Mmux_ealu6_A125_SW0_SW1 (N126)
+     LUT6:I3->O            1   0.097   0.000  stage3/al_unit/Mmux_ealu6_rs_lut<1> (stage3/al_unit/Mmux_ealu6_rs_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<1> (stage3/al_unit/Mmux_ealu6_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<2> (stage3/al_unit/Mmux_ealu6_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<3> (stage3/al_unit/Mmux_ealu6_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<4> (stage3/al_unit/Mmux_ealu6_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<5> (stage3/al_unit/Mmux_ealu6_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<6> (stage3/al_unit/Mmux_ealu6_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<7> (stage3/al_unit/Mmux_ealu6_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<8> (stage3/al_unit/Mmux_ealu6_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<9> (stage3/al_unit/Mmux_ealu6_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<10> (stage3/al_unit/Mmux_ealu6_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<11> (stage3/al_unit/Mmux_ealu6_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<12> (stage3/al_unit/Mmux_ealu6_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<13> (stage3/al_unit/Mmux_ealu6_rs_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<14> (stage3/al_unit/Mmux_ealu6_rs_cy<14>)
+     XORCY:CI->O          33   0.370   0.800  stage3/al_unit/Mmux_ealu6_rs_xor<15> (Alu_Result_15_OBUF)
+     LUT6:I0->O            1   0.097   0.683  stage3/al_unit/z6 (stage3/al_unit/z5)
+     LUT6:I1->O           30   0.097   0.402  stage2/cu/pcsource<0>3 (pcsource<0>)
+     LUT4:I3->O            1   0.097   0.000  stage1/next_pc/Mmux_y251 (stage1/npc<31>)
+     FDC:D                     0.008          stage1/program_counter/q_31
+    ----------------------------------------
+    Total                      8.866ns (2.458ns logic, 6.408ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 1022 / 1022
+-------------------------------------------------------------------------
+Offset:              1.216ns (Levels of Logic = 2)
+  Source:            Resetn (PAD)
+  Destination:       stage1/program_counter/q_31 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: Resetn to stage1/program_counter/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  Resetn_IBUF (Resetn_IBUF)
+     INV:I->O           1022   0.113   0.474  stage1/program_counter/clrn_inv1_INV_0 (stage1/program_counter/clrn_inv)
+     FDC:CLR                   0.349          stage1/program_counter/q_2
+    ----------------------------------------
+    Total                      1.216ns (0.463ns logic, 0.753ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 25213714 / 91
+-------------------------------------------------------------------------
+Offset:              7.436ns (Levels of Logic = 40)
+  Source:            stage1/program_counter/q_7 (FF)
+  Destination:       Alu_Result<31> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: stage1/program_counter/q_7 to Alu_Result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             27   0.361   0.799  stage1/program_counter/q_7 (stage1/program_counter/q_7)
+     LUT6:I0->O           17   0.097   0.630  stage1/inst_mem/Mram_inst271 (Inst_27_OBUF)
+     LUT4:I0->O            3   0.097   0.305  stage2/cu/out1611 (stage2/cu/out161)
+     LUT4:I3->O           59   0.097   0.622  stage2/cu/shift1 (shift)
+     LUT5:I2->O            2   0.097   0.697  stage3/alu_ina/Mmux_y241 (stage3/alua<30>)
+     LUT6:I0->O            3   0.097   0.566  stage3/al_unit/Mmux_ealu6_A27111 (stage3/al_unit/Mmux_ealu6_A27111)
+     LUT6:I2->O           22   0.097   0.391  stage3/al_unit/Mmux_ealu6_A2721 (stage3/al_unit/Mmux_ealu6_A272)
+     LUT6:I5->O            1   0.097   0.511  stage3/al_unit/Mmux_ealu6_A125_SW0_SW1 (N126)
+     LUT6:I3->O            1   0.097   0.000  stage3/al_unit/Mmux_ealu6_rs_lut<1> (stage3/al_unit/Mmux_ealu6_rs_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<1> (stage3/al_unit/Mmux_ealu6_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<2> (stage3/al_unit/Mmux_ealu6_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<3> (stage3/al_unit/Mmux_ealu6_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<4> (stage3/al_unit/Mmux_ealu6_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<5> (stage3/al_unit/Mmux_ealu6_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<6> (stage3/al_unit/Mmux_ealu6_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<7> (stage3/al_unit/Mmux_ealu6_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<8> (stage3/al_unit/Mmux_ealu6_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<9> (stage3/al_unit/Mmux_ealu6_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<10> (stage3/al_unit/Mmux_ealu6_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<11> (stage3/al_unit/Mmux_ealu6_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<12> (stage3/al_unit/Mmux_ealu6_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<13> (stage3/al_unit/Mmux_ealu6_rs_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<14> (stage3/al_unit/Mmux_ealu6_rs_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<15> (stage3/al_unit/Mmux_ealu6_rs_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<16> (stage3/al_unit/Mmux_ealu6_rs_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<17> (stage3/al_unit/Mmux_ealu6_rs_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<18> (stage3/al_unit/Mmux_ealu6_rs_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<19> (stage3/al_unit/Mmux_ealu6_rs_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<20> (stage3/al_unit/Mmux_ealu6_rs_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<21> (stage3/al_unit/Mmux_ealu6_rs_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<22> (stage3/al_unit/Mmux_ealu6_rs_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<23> (stage3/al_unit/Mmux_ealu6_rs_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<24> (stage3/al_unit/Mmux_ealu6_rs_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<25> (stage3/al_unit/Mmux_ealu6_rs_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<26> (stage3/al_unit/Mmux_ealu6_rs_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<27> (stage3/al_unit/Mmux_ealu6_rs_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<28> (stage3/al_unit/Mmux_ealu6_rs_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<29> (stage3/al_unit/Mmux_ealu6_rs_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  stage3/al_unit/Mmux_ealu6_rs_cy<30> (stage3/al_unit/Mmux_ealu6_rs_cy<30>)
+     XORCY:CI->O          33   0.370   0.386  stage3/al_unit/Mmux_ealu6_rs_xor<31> (Alu_Result_31_OBUF)
+     OBUF:I->O                 0.000          Alu_Result_31_OBUF (Alu_Result<31>)
+    ----------------------------------------
+    Total                      7.436ns (2.527ns logic, 4.909ns route)
+                                       (34.0% logic, 66.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    8.866|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.47 secs
+ 
+--> 
+
+Total memory usage is 458876 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab_cpu.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="addsub32_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addsub32_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="alu.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="alu_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="alu_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1750315162" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1750315162">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1750315422" xil_pn:in_ck="-6631167629082824340" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1750315422">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu_tb_fig4_7.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/lab5-fin/addsub32.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/mux4x32.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/shift.v"/>
+      <outfile xil_pn:name="alu_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1750315456" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5481440595820247512" xil_pn:start_ts="1750315456">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1750315456" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4453673249725908982" xil_pn:start_ts="1750315456">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1750315167" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4334579856418752429" xil_pn:start_ts="1750315167">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1750315422" xil_pn:in_ck="-6631167629082824340" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1750315422">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/Lab05_ALU_Start/alu_tb_fig4_7.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/lab5-fin/addsub32.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/mux4x32.v"/>
+      <outfile xil_pn:name="../../lab/Lab_05_ALU_2025_release/shift.v"/>
+      <outfile xil_pn:name="alu_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1751865021" xil_pn:in_ck="-6631167629082824340" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1716650318390527071" xil_pn:start_ts="1751865009">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="alu_test_beh.prj"/>
+      <outfile xil_pn:name="alu_test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1751865021" xil_pn:in_ck="8193736225530538391" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8962331260929041662" xil_pn:start_ts="1751865021">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="alu_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
+
+</generated_project>

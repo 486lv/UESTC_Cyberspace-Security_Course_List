@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/Lab_06_SC_2025_Start/scdatamem.v" Line 19: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">32</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/Lab_06_SC_2025_Start/mapped_io_data.v" Line 37: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">32</arg>&gt; bits.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"D:/Lab_06_SC_2025_Start/mapped_io_data.v" Line 72: Procedural assignment to a non-register <arg fmt="%s" index="1">IO_7SEGEN_N</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"D:/Lab_06_SC_2025_Start/mapped_io_data.v" Line 72: Procedural assignment to a non-register <arg fmt="%s" index="1">IO_7SEGEN_N</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"D:/Lab_06_SC_2025_Start/mapped_io_data.v" Line 75: Procedural assignment to a non-register <arg fmt="%s" index="1">IO_7SEG_DATA</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"D:/Lab_06_SC_2025_Start/mapped_io_data.v" Line 75: Procedural assignment to a non-register <arg fmt="%s" index="1">IO_7SEG_DATA</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Lab_06_SC_2025_Start/mapped_io_data.v" Line 11: Module &lt;<arg fmt="%s" index="1">mapped_io_data</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

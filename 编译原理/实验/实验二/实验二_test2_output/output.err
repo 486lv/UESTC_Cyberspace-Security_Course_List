@@ -1,0 +1,8 @@
+***LINE:4 Missing ';' before 'read'
+***LINE:6 Missing 'else' before ';'
+***LINE:7 Unexpected token 'else' in statement
+***LINE:8 Missing ';' before 'edn'
+***LINE:8 Symbol 'edn' is undefined
+***LINE:8 Missing ':=' before 'EOF'
+***LINE:8 Symbol '' is undefined
+***LINE:8 Missing 'end' before ''

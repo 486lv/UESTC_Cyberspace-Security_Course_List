@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "D:/lab3/OneSevenSegs_Anvyl.xst" -ofn "D:/lab3/OneSevenSegs_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx45-fgg484-3 OneSevenSegs_Anvyl.ngc OneSevenSegs_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ngd OneSevenSegs_Anvyl.pcf 
+xst -intstyle ise -ifn "D:/lab3/OneSevenSegs_Anvyl.xst" -ofn "D:/lab3/OneSevenSegs_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx45-fgg484-3 OneSevenSegs_Anvyl.ngc OneSevenSegs_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ngd OneSevenSegs_Anvyl.pcf 
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ngd OneSevenSegs_Anvyl.pcf 
+xst -intstyle ise -ifn "D:/lab3/OneSevenSegs_Anvyl.xst" -ofn "D:/lab3/OneSevenSegs_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx45-fgg484-3 OneSevenSegs_Anvyl.ngc OneSevenSegs_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ngd OneSevenSegs_Anvyl.pcf 
+xst -intstyle ise -ifn "D:/lab3/OneSevenSegs_Anvyl.xst" -ofn "D:/lab3/OneSevenSegs_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx45-fgg484-3 OneSevenSegs_Anvyl.ngc OneSevenSegs_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ngd OneSevenSegs_Anvyl.pcf 
+xst -intstyle ise -ifn "D:/lab3/OneSevenSegs_Anvyl.xst" -ofn "D:/lab3/OneSevenSegs_Anvyl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx45-csg484-3 OneSevenSegs_Anvyl.ngc OneSevenSegs_Anvyl.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ngd OneSevenSegs_Anvyl.pcf 
+par -w -intstyle ise -ol high -mt off OneSevenSegs_Anvyl_map.ncd OneSevenSegs_Anvyl.ncd OneSevenSegs_Anvyl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml OneSevenSegs_Anvyl.twx OneSevenSegs_Anvyl.ncd -o OneSevenSegs_Anvyl.twr OneSevenSegs_Anvyl.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f OneSevenSegs_Anvyl.ut OneSevenSegs_Anvyl.ncd 

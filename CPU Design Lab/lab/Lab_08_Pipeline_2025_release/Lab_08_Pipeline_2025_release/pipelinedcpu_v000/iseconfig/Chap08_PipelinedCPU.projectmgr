@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Chap08_PipelinedCPU" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/addsub32 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|addsub32.v</ClosedNode>
+         <ClosedNode>/alu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|alu.v</ClosedNode>
+         <ClosedNode>/pipelinedcpu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|pipelinedcpu.v/exe_stage - pipeexe</ClosedNode>
+         <ClosedNode>/pipelinedcpu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|pipelinedcpu.v/id_stage - pipeid</ClosedNode>
+         <ClosedNode>/pipelinedcpu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|pipelinedcpu.v/if_stage - pipeif</ClosedNode>
+         <ClosedNode>/pipelinedcpu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|pipelinedcpu.v/inst_reg - pipeir</ClosedNode>
+         <ClosedNode>/pipelinedcpu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|source|pipelinedcpu.v/prog_cnt - pipepc</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>pipelinedcpu_tb_fig8_18 (D:/2024-2025-2/Computer_System_Design_and_Implementation/Labs/Lab_08_Pipeline_2025/Lab_08_Pipeline_2025_release/pipelinedcpu_v000/pipelinedcpu_tb_fig8_18.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>pipelinedcpu_tb_fig8_18 (D:/2024-2025-2/Computer_System_Design_and_Implementation/Labs/Lab_08_Pipeline_2025/Lab_08_Pipeline_2025_release/pipelinedcpu_v000/pipelinedcpu_tb_fig8_18.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d0000000100000000000000240000000100000000000000780000000100000000000002b90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>add.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>pipeid.v (D:/2023-2024-2/Computer_System_Design_and_Implementation/LiYaMin/source/pipeid.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ae00000001000000030000007d0000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>pipeid.v (D:/2023-2024-2/Computer_System_Design_and_Implementation/LiYaMin/source/pipeid.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001290000011b01000000040100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>pipeimem.v (Z:/2014/mips/LiYaMin/source/pipeimem.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016c000000020000000000000000000000000000000064ffffffff000000810000000000000002000000ed00000001000000000000007f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>pipeimem.v (Z:/2014/mips/LiYaMin/source/pipeimem.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/pipelinedcpu D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu.v</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/exe_stage - pipeexe</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/id_stage - pipeid</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/id_stage - pipeid/br_addr - cla32</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/if_stage - pipeif/pc_plus4 - cla32</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2023-2024-2|Computer_System_Design_and_Implementation|LiYaMin|Chap08_PipelinedCPU_2024_0313|pipelinedcpu|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/inst_reg - pipeir</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/exe_stage - pipeexe</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/exe_stage - pipeexe/alu_unit - alu/as32 - addsub32</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/exe_stage - pipeexe/ret_addr - cla32</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/id_stage - pipeid</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/if_stage - pipeif</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/if_stage - pipeif/pc_plus4 - cla32/cla - cla_32</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/inst_reg - pipeir</ClosedNode>
+         <ClosedNode>/pipelinedcpu_tb_fig8_18 D:|2024-2025-2|Computer_System_Design_and_Implementation|Labs|Lab_08_Pipeline_2025|Lab_08_Pipeline_2025_release|pipelinedcpu_v000|pipelinedcpu_tb_fig8_18.v/uut - pipelinedcpu/prog_cnt - pipepc</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>pipelinedcpu_tb_fig8_18 (D:/2024-2025-2/Computer_System_Design_and_Implementation/Labs/Lab_08_Pipeline_2025/Lab_08_Pipeline_2025_release/pipelinedcpu_v000/pipelinedcpu_tb_fig8_18.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016d0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>pipelinedcpu_tb_fig8_18 (D:/2024-2025-2/Computer_System_Design_and_Implementation/Labs/Lab_08_Pipeline_2025/Lab_08_Pipeline_2025_release/pipelinedcpu_v000/pipelinedcpu_tb_fig8_18.v)</CurrentItem>
+   </ItemView>
+</Project>

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\lab3\OneSevenSegs_Anvyl.ncd
+OUTFILE=D:\lab3\OneSevenSegs_Anvyl.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=D:\lab3
+LICENSE=WebPack
+USER_INFO=__0_0_0

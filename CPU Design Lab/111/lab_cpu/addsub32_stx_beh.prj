@@ -1,0 +1,2 @@
+verilog isim_temp "../../lab/Lab_05_ALU_2025_release/lab5-fin/addsub32.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

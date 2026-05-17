@@ -1,0 +1,28 @@
+Command line:
+   sc_interrupt_tb_fig6_12_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61575
+
+Thu Jul 03 15:21:19 2025
+
+
+ Elaboration Time: 0.140401 sec
+
+ Current Memory Usage: 1171.6 Meg
+
+ Total Signals          : 2261
+ Total Nets             : 4008
+ Total Signal Drivers   : 752
+ Total Blocks           : 318
+ Total Primitive Blocks : 213
+ Total Processes        : 769
+ Total Traceable Variables  : 57
+ Total Scalar Nets and Variables : 7044
+
+ Total Simulation Time: 0.218401 sec
+
+ Current Memory Usage: 699.711 Meg
+
+Thu Jul 03 15:32:10 2025
+

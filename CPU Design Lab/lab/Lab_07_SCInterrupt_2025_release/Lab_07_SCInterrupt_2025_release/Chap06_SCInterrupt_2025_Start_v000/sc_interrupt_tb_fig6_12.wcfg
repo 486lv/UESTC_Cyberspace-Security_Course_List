@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/2014/mips/LiYaMin/Chap06_SCInterrupt/dffe32_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sc_interrupt_tb_fig6_12" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/resetn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/mem_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_clk</obj_property>
+      <obj_property name="ObjectShortName">mem_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/aluout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/memout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/intr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">intr</obj_property>
+      <obj_property name="ObjectShortName">intr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/inta" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inta</obj_property>
+      <obj_property name="ObjectShortName">inta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/cu/overflow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">overflow</obj_property>
+      <obj_property name="ObjectShortName">overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/npc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/epc_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">epc_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">epc_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/cu/selpc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">selpc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selpc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/exc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">exc</obj_property>
+      <obj_property name="ObjectShortName">exc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/sta_l1_a0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sta_l1_a0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta_l1_a0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/mtc0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mtc0</obj_property>
+      <obj_property name="ObjectShortName">mtc0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/sta_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sta_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sc_interrupt_tb_fig6_12/uut/cpu/sta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sta[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,88 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml OneSevenSegs_Anvyl.twx OneSevenSegs_Anvyl.ncd -o
+OneSevenSegs_Anvyl.twr OneSevenSegs_Anvyl.pcf -ucf constraints.ucf
+
+Design file:              OneSevenSegs_Anvyl.ncd
+Physical constraint file: OneSevenSegs_Anvyl.pcf
+Device,package,speed:     xc6slx45,csg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Btn0           |En             |   13.207|
+Btn0           |Segs<0>        |   14.868|
+Btn0           |Segs<1>        |   15.045|
+Btn0           |Segs<2>        |   14.055|
+Btn0           |Segs<3>        |   14.751|
+Btn0           |Segs<4>        |   14.988|
+Btn0           |Segs<5>        |   14.896|
+Btn0           |Segs<6>        |   14.204|
+Switch<0>      |Segs<0>        |   10.097|
+Switch<0>      |Segs<1>        |   10.158|
+Switch<0>      |Segs<2>        |    9.872|
+Switch<0>      |Segs<3>        |    9.864|
+Switch<0>      |Segs<4>        |   10.805|
+Switch<0>      |Segs<5>        |   10.792|
+Switch<0>      |Segs<6>        |   10.100|
+Switch<1>      |Segs<0>        |    9.919|
+Switch<1>      |Segs<1>        |   10.260|
+Switch<1>      |Segs<2>        |    9.790|
+Switch<1>      |Segs<3>        |    9.966|
+Switch<1>      |Segs<4>        |   10.723|
+Switch<1>      |Segs<5>        |   10.648|
+Switch<1>      |Segs<6>        |    9.956|
+Switch<2>      |Segs<0>        |   10.109|
+Switch<2>      |Segs<1>        |    9.976|
+Switch<2>      |Segs<2>        |    9.676|
+Switch<2>      |Segs<3>        |    9.682|
+Switch<2>      |Segs<4>        |   10.609|
+Switch<2>      |Segs<5>        |   10.389|
+Switch<2>      |Segs<6>        |    9.697|
+Switch<3>      |Segs<0>        |    9.878|
+Switch<3>      |Segs<1>        |    9.914|
+Switch<3>      |Segs<2>        |    9.432|
+Switch<3>      |Segs<3>        |    9.620|
+Switch<3>      |Segs<4>        |   10.365|
+Switch<3>      |Segs<5>        |   10.467|
+Switch<3>      |Segs<6>        |    9.775|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Mar 03 15:25:21 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 261 MB
+
+
+
